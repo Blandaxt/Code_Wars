@@ -109,4 +109,46 @@ Your task is to complete the function which takes a string, and returns an array
 
 ## Learned
 
-I learned the text and the toUppercase method. By combining these two methods with the slice method, i can target each individual text and check for each of their combination.    
+I learned the text and the toUppercase method. By combining these two methods with the slice method, i can target each individual text and check for each of their combination.
+
+## Ones and Zeros
+
+Given an array of one's and zero's convert the equivalent binary value to an integer.
+
+Eg: [0, 0, 0, 1] is treated as 0001 which is the binary representation of 1.
+
+Examples:
+
+Testing: [0, 0, 0, 1] ==> 1
+Testing: [0, 0, 1, 0] ==> 2
+Testing: [0, 1, 0, 1] ==> 5
+Testing: [1, 0, 0, 1] ==> 9
+Testing: [0, 0, 1, 0] ==> 2
+Testing: [0, 1, 1, 0] ==> 6
+Testing: [1, 1, 1, 1] ==> 15
+Testing: [1, 0, 1, 1] ==> 11
+However, the arrays can have varying lengths, not just limited to 4.
+
+## Learned
+
+
+I learned from this codewar that binary patterns of 0 and 1's can form a number and it holds a value of an integer. I also used the method i used before, .join.
+
+##  Return Negative
+
+In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?
+
+Example:
+
+makeNegative(1); // return -1
+makeNegative(-5); // return -5
+makeNegative(0); // return 0
+makeNegative(0.12); // return -0.12
+Notes:
+
+The number can be negative already, in which case no change is required.
+Zero (0) is not checked for any specific sign. Negative zeros make no mathematical sense.
+
+## Learned
+
+This assignment was incredibly easy, but i still learned how to use my if conditionals more efficiently and to always log my results.   
