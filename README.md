@@ -152,3 +152,15 @@ Zero (0) is not checked for any specific sign. Negative zeros make no mathematic
 ## Learned
 
 This assignment was incredibly easy, but i still learned how to use my if conditionals more efficiently and to always log my results.   
+
+## Deodorant Evaporator
+
+This program tests the life of an evaporator containing a gas.
+
+We know the content of the evaporator (content in ml), the percentage of foam or gas lost every day (evap_per_day) and the threshold (threshold) in percentage beyond which the evaporator is no longer useful. All numbers are strictly positive.
+
+The program reports the nth day (as an integer) on which the evaporator will be out of use.
+
+## Learned:
+
+I learned how to calculate a percentage loss. By how much the current rate of the foam lost everyday, i could increment how many days it would take before before the evaporator is no longer useful. This was the first time i used fractions in my calculations and used the arguments to solve the answer.  
