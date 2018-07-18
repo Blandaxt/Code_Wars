@@ -180,3 +180,15 @@ For this kata, don't worry about edge cases like where unexpected input is passe
 ## Learned:
 
 In this code war, It brought back the fundamentals and how to use boolean values. I learned some shorter methods to represent the work flow using Es6 syntax. I also used the toString(); method again.
+
+## Square(n) Sum
+
+Complete the squareSum/square_sum/SquareSum method so that it squares each number passed into it and then sums the results together.
+
+For example:
+
+squareSum([1, 2, 2]); // should return 9
+
+## Learned:
+
+I learned the reduce() method from doing this code war. I learned how to use simple fat arrow functions that can be called inside methods.
