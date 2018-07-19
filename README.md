@@ -192,3 +192,11 @@ squareSum([1, 2, 2]); // should return 9
 ## Learned:
 
 I learned the reduce() method from doing this code war. I learned how to use simple fat arrow functions that can be called inside methods.
+
+## Simple multiplication
+
+This kata is about multiplying a given number by eight if it is an even number and by nine otherwise.
+
+## Learned:
+
+I learned how to use Es6 syntax using the modulus operator. 
