@@ -199,4 +199,14 @@ This kata is about multiplying a given number by eight if it is an even number a
 
 ## Learned:
 
-I learned how to use Es6 syntax using the modulus operator. 
+I learned how to use Es6 syntax using the modulus operator.
+
+## Function 3 - multiplying two numbers
+
+This function has to be called multiply and needs to take two numbers as arguments, and has to return the multiplication of the two arguments.
+
+FUNDAMENTALS
+
+## Learned
+
+I did not learn too much. I understood i had to create a simple multiplication operator function. Wished their was a simple method that would do the multiplication for me instead of having to use function. I will look that up for my future codewars. 
