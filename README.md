@@ -209,4 +209,20 @@ FUNDAMENTALS
 
 ## Learned
 
-I did not learn too much. I understood i had to create a simple multiplication operator function. Wished their was a simple method that would do the multiplication for me instead of having to use function. I will look that up for my future codewars. 
+I did not learn too much. I understood i had to create a simple multiplication operator function. Wished their was a simple method that would do the multiplication for me instead of having to use function. I will look that up for my future codewars.
+
+## DNA to RNA Conversion
+
+Deoxyribonucleic acid, DNA is the primary information storage molecule in biological systems. It is composed of four nucleic acid bases Guanine ('G'), Cytosine ('C'), Adenine ('A'), and Thymine ('T').
+
+Ribonucleic acid, RNA, is the primary messenger molecule in cells. RNA differs slightly from DNA its chemical structure and contains no Thymine. In RNA Thymine is replaced by another nucleic acid Uracil ('U').
+
+Create a funciton which translates a given DNA string into RNA.
+
+For example:
+
+DNAtoRNA("GCAT") returns ("GCAU")
+
+## Learned:
+
+I learned the simple RegExp g Modifier that looks for a string of letters on a global scope. This way, it can find all the specified letters i am looking for and change them to the string i input into the function. I also used the const block function keyword so the function is run with strict. I also used the splace method that went well with the RegExp.   
