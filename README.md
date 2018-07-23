@@ -226,3 +226,29 @@ DNAtoRNA("GCAT") returns ("GCAU")
 ## Learned:
 
 I learned the simple RegExp g Modifier that looks for a string of letters on a global scope. This way, it can find all the specified letters i am looking for and change them to the string i input into the function. I also used the const block function keyword so the function is run with strict. I also used the splace method that went well with the RegExp.   
+
+## Fake binary
+
+Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string.
+
+global main
+extern fakebin
+
+section .bss
+buffer:    resb  64
+
+section .data
+digits:    db  "45385593107843568", 0h0
+
+section .text
+main:
+    mov rdi, digits
+    mov rsi, buffer
+    call fakebin        ; rax <- 01011110001100111
+    ret
+
+##  Learned:
+
+I used the for loops to iterate through the number string. Then i used the if conditional to measure if that number is greater or less than the string '5'. Then i finally replaced every number with either 1 or 0 depending if that number is less than 5 or greater or equal to 5.
+
+I learned how to set up a variable holding an empty string that will switch to the desired string when it meets the requirements of the if conditional. 
