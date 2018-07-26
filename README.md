@@ -307,4 +307,25 @@ Note: Your program should be able to handle numbers up to 6 digits long
 
 ## Learned
 
-I used some array functions such as slice and made sure to turn all my inputs into strings. Then i check through the input using a for loop and adding every permutation to a sum. Then divide that sum by the length of the array. This gave me the average permutations. 
+I used some array functions such as slice and made sure to turn all my inputs into strings. Then i check through the input using a for loop and adding every permutation to a sum. Then divide that sum by the length of the array. This gave me the average permutations.
+
+##  Century From Year
+
+Introduction
+The first century spans from the year 1 up to and including the year 100, The second - from the year 101 up to and including the year 200, etc.
+
+Task :
+Given a year, return the century it is in.
+
+Input , Output Examples ::
+centuryFromYear(1705)  returns (18)
+centuryFromYear(1900)  returns (19)
+centuryFromYear(1601)  returns (17)
+centuryFromYear(2000)  returns (20)
+Hope you enjoy it .. Awaiting for Best Practice Codes
+
+Enjoy Learning !!!
+
+## Learned:
+
+I first got rid of my edge cases like any numbers less than 100. Then i focused on checking if i will get a decimal number from dividing the given year by 100. If i do get a decimal, i round it and add 1 to it. Lastly, i just returned any whole numbers divided by 100. This covered the range of any given number. This is a order 1 (O(1)) in runtime. 
