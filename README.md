@@ -251,4 +251,60 @@ main:
 
 I used the for loops to iterate through the number string. Then i used the if conditional to measure if that number is greater or less than the string '5'. Then i finally replaced every number with either 1 or 0 depending if that number is less than 5 or greater or equal to 5.
 
-I learned how to set up a variable holding an empty string that will switch to the desired string when it meets the requirements of the if conditional. 
+I learned how to set up a variable holding an empty string that will switch to the desired string when it meets the requirements of the if conditional.
+
+## Anagram Detection
+
+An anagram is the result of rearranging the letters of a word to produce a new word (see wikipedia).
+
+Note: anagrams are case insensitive
+
+Complete the function to return true if the two arguments given are anagrams of theeach other; return false otherwise.
+
+Examples
+"foefet" is an anagram of "toffee"
+
+"Buckethead" is an anagram of "DeathCubeK"
+
+## Learned:
+
+ I learned how to set up an anagram in code. I learned the basics when comparing to string values and i learned how to shorten my solution that it saves time.
+
+ The solutions are both O(n) in time complexity.
+
+## Permutation Average
+
+A number is simply made up of digits.
+The number 1256 is made up of the digits 1, 2, 5, and 6.
+For 1256 there are 24 distinct permuations of the digits:
+1256, 1265, 1625, 1652, 1562, 1526, 2156, 2165, 2615, 2651, 2561, 2516,
+5126, 5162, 5216, 5261, 5621, 5612, 6125, 6152, 6251, 6215, 6521, 6512.
+
+Your goal is to write a program that takes a number, n, and returns the average value of all distinct permutations of the digits in n. Your answer should be rounded to the nearest integer. For the example above the return value would be 3889.
+
+n will never be negative
+
+A few examples:
+
+permutation_average(2)
+return 2
+
+permutation_average(25)
+>>> 25 + 52 = 77
+>>> 77 / 2 = 38.5
+return 39
+
+permutation_average(20)
+>>> 20 + 02 = 22
+>>> 22 / 2 = 11
+return 11
+
+permutation_average(737)
+>>> 737 + 377 + 773 = 1887
+>>> 1887 / 3 = 629
+return 629
+Note: Your program should be able to handle numbers up to 6 digits long
+
+## Learned
+
+I used some array functions such as slice and made sure to turn all my inputs into strings. Then i check through the input using a for loop and adding every permutation to a sum. Then divide that sum by the length of the array. This gave me the average permutations. 
