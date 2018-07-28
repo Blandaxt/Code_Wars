@@ -328,4 +328,28 @@ Enjoy Learning !!!
 
 ## Learned:
 
-I first got rid of my edge cases like any numbers less than 100. Then i focused on checking if i will get a decimal number from dividing the given year by 100. If i do get a decimal, i round it and add 1 to it. Lastly, i just returned any whole numbers divided by 100. This covered the range of any given number. This is a order 1 (O(1)) in runtime. 
+I first got rid of my edge cases like any numbers less than 100. Then i focused on checking if i will get a decimal number from dividing the given year by 100. If i do get a decimal, i round it and add 1 to it. Lastly, i just returned any whole numbers divided by 100. This covered the range of any given number. This is a order 1 (O(1)) in runtime.
+
+## Furthest Distance
+
+You are given a array which contains sub-arrays. Each sub-array represents a point in a (2d) cartesian coordinate system.
+
+Create a function which returns the distance of the two points which are furthest apart.
+
+All distances are to be rounded to 2 decimal places. If the array contains two points return the distance between them. There will always be at least two points.
+
+
+furthestDistance([[1,2], [3,8], [4,3]]) // returns 6.32
+Distances between
+
+[1,2] [3,8] //6.32
+
+[3,8] [4,3] //5.10
+
+[1,2] [4,3] //3.16
+
+This link may help if you don't know how to work out the distance between two points.
+
+## Learned
+
+I learned to use multiple methods and the Pythagorean theorem to solve this code war. It was truly a challenge to get the decimal places in the right place. 
