@@ -352,4 +352,14 @@ This link may help if you don't know how to work out the distance between two po
 
 ## Learned
 
-I learned to use multiple methods and the Pythagorean theorem to solve this code war. It was truly a challenge to get the decimal places in the right place. 
+I learned to use multiple methods and the Pythagorean theorem to solve this code war. It was truly a challenge to get the decimal places in the right place.
+
+## Is this a triangle?
+
+Implement a method that accepts 3 integer values a, b, c. The method should return true if a triangle can be built with the sides of given length and false in any other case.
+
+(In this case, all triangles must have surface greater than 0 to be accepted).
+
+## Learned:
+
+For a triangle to be formed, 2 sides have to be always greater than the third side. By summing and comparing the sides, i can determine if it is a triangle or not. 
