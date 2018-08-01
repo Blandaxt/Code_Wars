@@ -377,8 +377,36 @@ To sort this list in ascending order using Bubblesort, you first have to compare
 You then proceed by comparing the 2nd and 3rd terms, performing a swap when necessary, and then the 3rd and 4th term, then the 4th and 5th term, etc. etc. When you reach the end of the list, it is said that you have completed 1 complete pass.
 
 Task
-Program an algorithm in Javascript (or your selected language, if it is available) that performs exactly 1 complete pass (no more, no less :D) of the Bubblesort algorithm to a list of positive integers. You may assume all arguments provided are arrays containing at least 2 positive integers.
+Program an algorithm in Javascript (or your selected language, if it is available) that performs exactly 1 complete pass (no more, no less :D) of the BubbleSort algorithm to a list of positive integers. You may assume all arguments provided are arrays containing at least 2 positive integers.
 
 ## Learned:
 
-Learned the logic behind bubble swap technique and learned how to simply swap variables. 
+Learned the logic behind bubble swap technique and learned how to simply swap variables.
+
+## Find heavy ball - level: novice
+
+There are 8 balls numbered from 0 to 7. Seven of them have the same weight. One is heavier. Your task is to find its number.
+
+Your function findBall will receive single argument - scales object. The scales object contains an internally stored array of 8 elements (indexes 0-7), each having the same value except one, which is greater. It also has a public method named getWeight(left, right) which takes two arrays of indexes and returns -1, 0, or 1 based on the accumulation of the values found at the indexes passed are heavier, equal, or lighter.
+
+getWeight returns:
+
+-1 if left pan is heavier
+
+1 if right pan is heavier
+
+0 if both pans weight the same
+
+Examples of scales.getWeight() usage:
+
+scales.getWeight([3], [7]) returns -1 if ball 3 is heavier than ball 7, 1 if ball 7 is heavier, or 0 i these balls have the same weight.
+
+scales.getWeight([3, 4], [5, 2]) returns -1 if weight of balls 3 and 4 is heavier than weight of balls 5 and 2 etc.
+
+So where's the catch, you may ask. Well - the scales is very old. You can use it only 4 TIMES before the scale breaks.
+
+Too easy? Try higher levels:
+
+## Learned
+
+I learned a bit from this function. The function first passes in 2 parameters. One is the scale and the other is a set array. It then does a conditional where it compares the length of the array to 1. It then returns the first array. It then stores the two integers in the variable a. Then takes the length of the previous number a and stores in the variable b. Lastly it takes the value in a as the scales, and both values of a and b to calculate the weight. it passes in a and the calculated scale weight to see if it is less than 0. If it is, less than 0 return a. if not, return b.   
