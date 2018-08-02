@@ -410,3 +410,13 @@ Too easy? Try higher levels:
 ## Learned
 
 I learned a bit from this function. The function first passes in 2 parameters. One is the scale and the other is a set array. It then does a conditional where it compares the length of the array to 1. It then returns the first array. It then stores the two integers in the variable a. Then takes the length of the previous number a and stores in the variable b. Lastly it takes the value in a as the scales, and both values of a and b to calculate the weight. it passes in a and the calculated scale weight to see if it is less than 0. If it is, less than 0 return a. if not, return b.   
+
+## Day Of The Week
+
+Oh no! I need to find out what day it is on a few particular dates. Help me figure it out. Return either Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, or Saturday.
+
+Dates may be passed in as strings or as Objects.
+
+## Learned
+
+I used a function expression to solve this problem. I continued this process with Es6 syntax for Javascript. I created an array of the name of the day of the week inside an anonymous function that also includes the method new Date with .getday method. This resulted in the function returning a name of the day fo the week.
