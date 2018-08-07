@@ -420,3 +420,33 @@ Dates may be passed in as strings or as Objects.
 ## Learned
 
 I used a function expression to solve this problem. I continued this process with Es6 syntax for Javascript. I created an array of the name of the day of the week inside an anonymous function that also includes the method new Date with .getday method. This resulted in the function returning a name of the day fo the week.
+
+## Keep Up The hoop
+
+Alex just got a new hula hoop, he loves it but feels discouraged because his little brother is better than him
+
+Write a program where Alex can input (n) how many times the hoop goes round and it will return him an encouraging message :)
+
+-If Alex gets 10 or more hoops, return the string "Great, now move on to tricks".
+
+-If he doesn't get 10 hoops, return the string "Keep at it until you get it".
+
+## learned
+
+I used an if function to choose through this Boolean answer. Then returned either one of the strings.
+
+## Enumerable Magic #4 - True for None?
+
+Create a method none? (JS none) that accepts an array and a block (JS: a function), and returns true if the block (/function) returns true for none of the items in the array. An empty list should return true.
+
+## Learned:
+
+I learned that using strictly equal to is not always correct for every functional problem.
+
+1. I solved this problem by first login the function and changing it into a string readable value. This way i can see what is being evaluated.  
+
+2. Then i created a for loop to go through the fed array in each function while logging each element in the array.
+
+3. Then i created an if conditional that reacts if each function is true for their value.
+
+4. If any of the functions return true, it would return false for the none function.   
