@@ -449,4 +449,28 @@ I learned that using strictly equal to is not always correct for every functiona
 
 3. Then i created an if conditional that reacts if each function is true for their value.
 
-4. If any of the functions return true, it would return false for the none function.   
+4. If any of the functions return true, it would return false for the none function.  
+
+## Don't give me five!
+
+In this kata you get the start number and the end number of a region and should return the count of all numbers except numbers with a 5 in it. The start and the end number are both inclusive!
+
+Examples:
+
+1,9 -> 1,2,3,4,6,7,8,9 -> Result 8
+4,17 -> 4,6,7,8,9,10,11,12,13,14,16,17 -> Result 12
+The result may contain fives. ;-)
+The start number will always be smaller than the end number. Both numbers can be also negative!
+
+## Learned:
+
+1. I solved this problem by first creating a for loop that started at the given start value and ending at the given end value.
+
+2. Then i created an if condition inside the for loop that would increase the counter if the number 5 was not found, but leave the counter the same if the number 5 is found.
+
+3. Then i went out of the function to create the function that would find 5 for me:
+
+* First: Converting the number that is given into a string:  
+* Second: Creating a for loop that would loop through that string.  
+* Third: Comparing each character in that string to the string 5 if they exactly match.
+* Fourth: If they match exactly, then the if returns true to the other if conditional which would not add to the counter. 
