@@ -473,4 +473,34 @@ The start number will always be smaller than the end number. Both numbers can be
 * First: Converting the number that is given into a string:  
 * Second: Creating a for loop that would loop through that string.  
 * Third: Comparing each character in that string to the string 5 if they exactly match.
-* Fourth: If they match exactly, then the if returns true to the other if conditional which would not add to the counter. 
+* Fourth: If they match exactly, then the if returns true to the other if conditional which would not add to the counter.
+
+## Counting sheep...
+
+Consider an array of sheep where some sheep may be missing from their place. We need a function that counts the number of sheep present in the array (true means present).
+
+For example,
+
+[true,  true,  true,  false,
+  true,  true,  true,  true ,
+  true,  false, true,  false,
+  true,  false, false, true ,
+  true,  true,  true,  true ,
+  false, false, true,  true]
+The correct answer would be 17.
+
+Hint: Don't forget to check for bad values like null/undefined
+
+## Learned/Process:
+
+1. I started this function by writing some pseudo code for the variables i will need.
+
+2. Then i created the variable counter which equaled 0 and started a for loop.
+
+3. Then i created an if condition inside of my for loop that would look for the value types.
+
+4. Then i called a function in the if condition that would take in the value from the array and return true or false.
+
+5. Then i proceeded with creating my findTheSheep function which would only return false when it does not match any of the other value types that i was not suppose encounter such as null, undefined and false.
+
+6. Lastly, i console logged some variables i wanted to keep watch on so i can see the process of the function. 
