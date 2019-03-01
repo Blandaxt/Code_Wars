@@ -503,4 +503,13 @@ Hint: Don't forget to check for bad values like null/undefined
 
 5. Then i proceeded with creating my findTheSheep function which would only return false when it does not match any of the other value types that i was not suppose encounter such as null, undefined and false.
 
-6. Lastly, i console logged some variables i wanted to keep watch on so i can see the process of the function. 
+6. Lastly, i console logged some variables i wanted to keep watch on so i can see the process of the function.
+
+
+## Jenny's secret message
+
+Jenny has written a function that returns a greeting for a user. However, she's in love with Johnny, and would like to greet him slightly different. She added a special case to her function, but she made a mistake.
+
+## Learned/Process:
+
+1. i corrected the code by looking at the code logic and moved the if conditional and it's true bracket before where it returns the value of names if they are not Jhonny. 
