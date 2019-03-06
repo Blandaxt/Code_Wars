@@ -512,4 +512,37 @@ Jenny has written a function that returns a greeting for a user. However, she's 
 
 ## Learned/Process:
 
-1. i corrected the code by looking at the code logic and moved the if conditional and it's true bracket before where it returns the value of names if they are not Jhonny. 
+1. i corrected the code by looking at the code logic and moved the if conditional and it's true bracket before where it returns the value of names if they are not Jhonny.
+
+
+## Removing Elements:
+
+Take an array and remove every second element out of that array. Always keep the first element and start removing with the next element.
+
+Example:
+
+myArr = ['Keep', 'Remove', 'Keep', 'Remove', 'Keep', ...];
+None of the arrays will be empty, so you don't have to worry about that!
+
+## Learned/Process:
+
+1. I started this problem by first thinking of a way to remove every second element from the array.
+
+2. I thought it would be easier if i used a criteria that targeted the index number of each element rather than the alue.
+
+3. So i first console log the array so i can see the full length of what i am given.
+
+4. Then i wrote created an empty array that would hold the items i want to keep by pushing the array items form the original array to my empty array.
+
+5. Instead of using a for loop, i thought of using the filter method that would filter through the array and push the intended results to a new array which worked.
+
+6. Then i thought of using the map method which is very similar to the filter method. Both functions worked similar and both worked out.
+
+## Multiply:
+
+The code does not execute properly. Try to figure out why.
+
+## Learned/Process:
+
+1. I understand that every language have different syntaxes that mean different writing forms are specific to that language. For example, PHP needs to have dollar sign ($) before the variables for every time the variable is mentioned. For C#, i have to mention the value type when ever i create it such (int, string, null) and so on. And while JavaScript is a simple operator with the value needing to be returned.
+      

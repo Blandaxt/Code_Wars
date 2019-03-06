@@ -11,4 +11,4 @@ function multiply(n1, n2){
 }
 
 // Wrote my own test
-Test: ('2', '3');
+// Test: ('2', '3');
