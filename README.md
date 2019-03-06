@@ -545,4 +545,39 @@ The code does not execute properly. Try to figure out why.
 ## Learned/Process:
 
 1. I understand that every language have different syntaxes that mean different writing forms are specific to that language. For example, PHP needs to have dollar sign ($) before the variables for every time the variable is mentioned. For C#, i have to mention the value type when ever i create it such (int, string, null) and so on. And while JavaScript is a simple operator with the value needing to be returned.
-      
+
+##longest_palindrome:
+
+Longest Palindrome
+Find the length of the longest substring in the given string s that is the same in reverse.
+
+As an example, if the input was “I like racecars that go fast”, the substring (racecar) length would be 7.
+
+If the length of the input string is 0, the return value must be 0.
+
+Example:
+"a" -> 1
+"aab" -> 2  
+"abcde" -> 1
+"zzbaabcd" -> 4
+"" -> 0
+
+##Learned/Process:
+
+1. I started this problem by first tackling this problem by first removing the edge cases by setting up some if conditions that would catch the characters if they only have one letter or no letters at all. If there is no given character, i would return 0, and if there is only one character, i would return that only character.
+
+2. Then i wanted to target the first letter of the string and hold that value for later comparison by using the substring method.
+
+3. I then created a for loop that would cycle through the given character as that is happening, i would call a new function within the for loop that is assigned to a variable and would take in the array, and the starting position fo the for loop.
+
+4. Then i would create a conditional that would switch the longest substring with the temporary substring if the temporary substring was longer than the longest.
+
+5. This would repeat it self until i would end up with the longest substring.
+
+6. The function i called would be balancing several things.
+
+* First: The function would be checking to see if the current values meet a while conditional loop.
+
+* Second: If the values being passed in meet the condition where the beginning is greater than 0 and the end is less than the full length of the given characters and when both the beginning value and the ending value matches exactly.
+
+* Third: If all of those conditions are met, then the beginning value would decrement by 1 and the ending value would increment by 1 until the longest substring has been found.   
