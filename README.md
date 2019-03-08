@@ -581,3 +581,24 @@ Example:
 * Second: If the values being passed in meet the condition where the beginning is greater than 0 and the end is less than the full length of the given characters and when both the beginning value and the ending value matches exactly.
 
 * Third: If all of those conditions are met, then the beginning value would decrement by 1 and the ending value would increment by 1 until the longest substring has been found.   
+
+
+## Is n divisible by x and y?
+
+Create a function isDivisible(n, x, y) that checks if a number n is divisible by two numbers x AND y. All inputs are positive, non-zero digits.
+
+Example:
+isDivisible(3,1,3)--> true because 3 is divisible by 1 and 3
+isDivisible(12,2,6)--> true because 12 is divisible by 2 and 6
+isDivisible(100,5,3)--> false because 100 is not divisible by 3
+isDivisible(12,7,5)--> false because 12 is neither divisible by 7 nor 5
+
+## Process/Learned:
+
+1. The first step i took when solving this problem is to understand which operator i was going to use. When i saw the word is Divisible, i knew it meant division, but the problem was looking for the end result of that division and not the actual division which meant they are asking me to use the modulo operator.
+
+2. Then i knew they were asking for a 0 remainder, this means that the rest was just setting up the logic. So then i went by first writing return because i knew whatever answer i get from my function i would want to return it out of the function block.  
+
+3. Then i wrote some parentheses because i want whatever logic i write to finish running before returning the value.
+
+4. Then i wrote the function if n is divisible by z and y while they both equal to 0 as the end result, then that is true and the function returns true. But i did not write it in an if else format because i knew that when it come s to Boolean values, the computer would sort out wether it is true or false. 
