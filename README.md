@@ -601,4 +601,40 @@ isDivisible(12,7,5)--> false because 12 is neither divisible by 7 nor 5
 
 3. Then i wrote some parentheses because i want whatever logic i write to finish running before returning the value.
 
-4. Then i wrote the function if n is divisible by z and y while they both equal to 0 as the end result, then that is true and the function returns true. But i did not write it in an if else format because i knew that when it come s to Boolean values, the computer would sort out wether it is true or false. 
+4. Then i wrote the function if n is divisible by z and y while they both equal to 0 as the end result, then that is true and the function returns true. But i did not write it in an if else format because i knew that when it come s to Boolean values, the computer would sort out wether it is true or false.
+
+
+## What's up next?
+
+Given a sequence of items and a specific item in that sequence, return the item immediately following the item specified. If the item occurs more than once in a sequence, return the item after the first occurrence. This should work for a sequence of any type.
+
+When the item isn't present or nothing follows it, the function should return nil in Clojure and Elixir, Nothing in Haskell, undefined in JavaScript, None in Python.
+
+nextItem([1, 2, 3, 4, 5, 6, 7], 3) # 4
+nextItem("testing", "t") # "e"
+
+## Process/Learned:
+
+1. I started this function problem by creating an anonymous function.
+
+2. The anonymous function will be taking in to arguments. One the item we will be iterating over and the item will be looking for.
+
+3. Then i create 2 variables, the first variable is a boolean golding the false value and the other is an empty variable.
+
+4. Then i log the data we are iterating over and the item we are looking for, for the sake of clarity.
+
+5. Then i start a for loop (for..of) which is the first time i am using it and see it in action.
+
+6. Inside the for loop, i create a constant variable i and target the data wi will be iterating over.
+
+7. Then i create a conditional that states if the boolean value i created turns form false to true, then have i equal the empty variable.
+
+8. Then under that conditional i create another conditional that ask if the item we are looking for is equal exactly to i. If that is true, have the boolean variable equal true!
+
+9. Once i have found i and the boolean variable is true, then the empty variable equal's the next item over by the item were looking for which matches the solution criteria which solves the problem.
+
+* I have learned to use the for..of for loop style that lets me iterate over a multitude of different data types like strings, objects, arrays and so on.
+
+* I have also learned to separate my conditionals where in the past i use to always link them as an else if.
+
+* I also learned that if the iterator i is set inside another if conditional, it will not be the same as the previous conditional that is used to check if it matches. 
