@@ -637,4 +637,24 @@ nextItem("testing", "t") # "e"
 
 * I have also learned to separate my conditionals where in the past i use to always link them as an else if.
 
-* I also learned that if the iterator i is set inside another if conditional, it will not be the same as the previous conditional that is used to check if it matches. 
+* I also learned that if the iterator i is set inside another if conditional, it will not be the same as the previous conditional that is used to check if it matches.
+
+
+## 8 kyu: Find numbers which are divisible by given number:
+
+Complete the function which takes two arguments and returns all numbers which are divisible by given divisor. First argument is an array of numbers and the second is the divisor.
+
+Example
+divisibleBy([1, 2, 3, 4, 5, 6], 2) == [2, 4, 6]
+
+## Learned/Process:
+
+1. From this problem, i started the process by console logging the input and the number that is the divisor.
+
+2. Then i created a variable that held an empty array.
+
+3. Then i looped through the array using the for each method on the inputed array.
+
+4. Then i compared each element in the array and looked at the remainder between a division with the divisor using the modulous operator. The remainder should equal to 0.
+
+5. If the if conditional is true, then it will initiate a push of that element to the empty array. Problem finish!
