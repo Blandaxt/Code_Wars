@@ -19,7 +19,7 @@
 // Solution:
 function divisibleBy(numbers, divisor){
 
-console.log(numbers, divisor)
+  console.log(numbers, divisor)
 
  let array = []
 

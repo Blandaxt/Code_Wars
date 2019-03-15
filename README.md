@@ -658,3 +658,44 @@ divisibleBy([1, 2, 3, 4, 5, 6], 2) == [2, 4, 6]
 4. Then i compared each element in the array and looked at the remainder between a division with the divisor using the modulous operator. The remainder should equal to 0.
 
 5. If the if conditional is true, then it will initiate a push of that element to the empty array. Problem finish!
+
+## 8 kyu: Total amount of points:
+
+Our football team finished the championship. The result of each match look like "x:y". Results of all matches are recorded in the collection.
+
+For example: ["3:1", "2:2", "0:1", ...]
+
+Write a function that takes such collection and counts the points of our team in the championship. Rules for counting points for each match:
+
+if x>y - 3 points
+if x<y - 0 point
+if x=y - 1 point
+Notes:
+
+there are 10 matches in the championship
+0 <= x <= 4
+0 <= y <= 4
+
+## Process/Solutions:
+
+1. I started this problem by console logging games to see what sort of arrays i am given.
+
+2. Then i decided to split each string character into two different arrays of x and y.
+
+3. then i used the for..of for loop to go through the games array.
+
+4. While going through the games array, i am designating two variables x and y.
+
+5. The x and y variables will hold the string representation position of each number in the games array elements.
+
+6. Then i will be pushing these values into the x and y empty array while converting them to a number data type.
+
+7. Then i will want to see what the results are, so i console logged both the x and the y array.
+
+8. Then i thought why not use the reduce method to reduce the x array into a variable called total and return it, but unfortunately that was not the answer.  
+
+9. So i instead created a function called point which would take in the x and y arrays and implement a score that would increment by a set value base on certain conditions.
+
+10. The point function would loop through the x array and compare both the x and y array values to see if they meet the condition. Then it would increment score or do nothing if it met the conditions. 
+
+11. Then i would return that score value back to the first main function and return it as the answer.  
