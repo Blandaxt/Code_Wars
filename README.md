@@ -696,6 +696,29 @@ there are 10 matches in the championship
 
 9. So i instead created a function called point which would take in the x and y arrays and implement a score that would increment by a set value base on certain conditions.
 
-10. The point function would loop through the x array and compare both the x and y array values to see if they meet the condition. Then it would increment score or do nothing if it met the conditions. 
+10. The point function would loop through the x array and compare both the x and y array values to see if they meet the condition. Then it would increment score or do nothing if it met the conditions.
 
 11. Then i would return that score value back to the first main function and return it as the answer.  
+
+
+## 8 kyu Sum of positive:
+
+You get an array of numbers, return the sum of all of the positives ones.
+
+Example [1,-4,7,12] => 1 + 7 + 12 = 20
+
+Note: if there is nothing to sum, the sum is default to 0
+
+##Process/Learned:
+
+1. This is my first C# kata outside of unity. I learned many different syntaxes that are different from JavaScript and just a tiny difference from unity c# framework after going through many docs in the Microsoft docs website.
+
+*  https://docs.microsoft.com/en-us/dotnet/csharp/
+
+2. I started this by console logging or should i say console writing the array for me to see while also creating a variable called sum that would hold the int data type of 0.
+
+3. Then i moved into a for loop where i go through the array until i would reach the full length of the array.
+
+4. Then i created an if conditional that would check if the element in the array equaled that same element under the absolute method.
+
+5. if that conditional became true, it would add that number into sum and then i would return sum outside of the for loop which ends the function.  
