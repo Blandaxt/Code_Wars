@@ -763,3 +763,19 @@ IP_ADDRESS_REQUIRED - no ip address was supplied
 3. Then i set an if conditional to check if the languages variable object holds the language string being given and would output that given language for that matching string and return it.
 
 4. Else i would return welcome in a string data type by default if i get any invalid string inputs and that ends the function.  
+
+## 8 kyu Opposite number:
+
+Very simple, given a number, find its opposite.
+
+Examples:
+
+1: -1
+14: -14
+-34: 34
+
+## Process/:Learned:
+
+1. There wasn't much to learn from such a simple functional programming. Just basic multiplication tables.
+
+2. Just multiplied the given input by -1 and return it. 
