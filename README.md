@@ -778,4 +778,60 @@ Examples:
 
 1. There wasn't much to learn from such a simple functional programming. Just basic multiplication tables.
 
-2. Just multiplied the given input by -1 and return it. 
+2. Just multiplied the given input by -1 and return it.
+
+## 8 kyu Find the force of gravity between two objects:
+
+Your job is to find the gravitational force between two spherical objects (obj1 , obj2).
+
+input
+Two arrays are give :
+
+arr_val (value array), consists of 3 elements
+1st element : mass of obj 1
+2nd element : mass of obj 2
+3rd element : distance between their centers
+arr_unit (unit array), consists of 3 elements
+1st element : unit for mass of obj 1
+2nd element : unit for mass of obj 2
+3rd element : unit for distance between their centers
+mass units are :
+
+kilogram (kg)
+gram (g)
+milligram (mg)
+microgram (μg)
+pound (lb)
+distance units are :
+
+meter (m)
+centimeter (cm)
+millimeter (mm)
+micrometer (μm)
+feet (ft)
+Note
+value of G = 6.67 x 10-11N.kg–2.m2
+
+1ft = 0.3048m
+
+1lb = 0.453592kg
+
+return value must be Newton for force (obviously)
+
+μ copy this from here to use it in your solution
+
+## Process/Learned:
+
+1. This was a very educational code-war where i had to look up some values up. I started this code-war like i always do by console logging the given input.
+
+2. Then I stored the given gravity value i was given in a variable.  
+
+3. Then I created a conversion function that would take each given string character and convert that letter into a numeric value base on the imperial and metric conversion system.
+
+4. i use the pound and feet as the basis for each conversion.  
+
+5. Then i googled the equation for the gravitational force between two objects(F = G * m1 * m2 / r2). Here is the site:
+
+* https://socratic.org/questions/how-do-you-calculate-the-force-of-gravity-between-two-objects
+
+6. And then i set the two arrays to match that equation and returned that value.    
