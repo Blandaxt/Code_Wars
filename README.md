@@ -834,4 +834,16 @@ return value must be Newton for force (obviously)
 
 * https://socratic.org/questions/how-do-you-calculate-the-force-of-gravity-between-two-objects
 
-6. And then i set the two arrays to match that equation and returned that value.    
+6. And then i set the two arrays to match that equation and returned that value.
+
+## 8 kyu Function 1 - hello world PHP:
+
+Description:
+Make a simple function called greet that returns the most-famous "hello world!".
+
+Style Points
+Sure, this is about as easy as it gets. But how clever can you be to create the most creative hello world you can think of? What is a "hello world" solution you would want to show your friends?
+
+## Process/Learned:
+
+1. Googled how to print and echo and turns out you only need return and the variable i stored it in. I actually don't need the variable. Just the return "hello world!". Nice quick code-war.    
