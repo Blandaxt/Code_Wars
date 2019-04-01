@@ -846,4 +846,32 @@ Sure, this is about as easy as it gets. But how clever can you be to create the 
 
 ## Process/Learned:
 
-1. Googled how to print and echo and turns out you only need return and the variable i stored it in. I actually don't need the variable. Just the return "hello world!". Nice quick code-war.    
+1. Googled how to print and echo and turns out you only need return and the variable i stored it in. I actually don't need the variable. Just the return "hello world!". Nice quick code-war.  
+
+## 8 kyu Abbreviate a Two Word Name:
+
+Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
+
+The output should be two capital letters with a dot seperating them.
+
+It should look like this:
+
+Sam Harris => S.H
+
+Patrick Feeney => P.F
+
+## process/learned:
+
+1. The first thing i did before i started this program is think how can i grab the initial character in the given string? How can i input a period? And how can i get the second character after the space character?
+
+2. After thinking of these things, i start =ed the program by var_dump the given input.
+
+3. After seeing the given input, i focused on creating some variables that would store each of the given characters i want. I knew i could get the first letter because it would always be at index 0. The difficult part was catching the second character and making sure the return is always an uppercase letter. The period in between could also be stored in a variable as a string.  
+
+4. Then i created a for loop that would go through the string and  reach the total length.
+
+5. Then i var_dump each of the given characters to see how can i grab the given characters.
+
+6. Then i created an if factor that would catch the space character and store the next character after it.
+
+7. Then i would return all these variables that contain the string value by concatenating them and putting them in the strtoupper function that would make sure every letter is uppercase. And that solves this function.    
