@@ -874,4 +874,36 @@ Patrick Feeney => P.F
 
 6. Then i created an if factor that would catch the space character and store the next character after it.
 
-7. Then i would return all these variables that contain the string value by concatenating them and putting them in the strtoupper function that would make sure every letter is uppercase. And that solves this function.    
+7. Then i would return all these variables that contain the string value by concatenating them and putting them in the strtoupper method that would make sure every letter is uppercase. And that solves this function.  
+
+## 8 kyu How many stairs will Suzuki climb in 20 years?:
+
+Suzuki is a monk who climbs a large staircase to the monastery as part of a ritual. Some days he climbs more stairs than others depending on the number of students he must train in the morning. He is curious how many stairs might be climbed over the next 20 years and has spent a year marking down his daily progress.
+
+The sum of all the stairs logged in a year will be used for estimating the number he might climb in 20.
+
+20_year_estimate = one_year_total * 20
+
+You will receive the following data structure representing the stairs Suzuki logged in a year. You will have all data for the entire year so regardless of how it is logged the problem should be simple to solve.
+
+stairs = [sunday,monday,tuesday,wednesday,thursday,friday,saturday]
+Make sure your solution takes into account all of the nesting within the stairs array.
+
+Each weekday in the stairs array is an array.
+
+sunday = [6737, 7244, 5776, 9826, 7057, 9247, 5842, 5484, 6543, 5153, 6832, 8274, 7148, 6152, 5940, 8040, 9174, 7555, 7682, 5252, 8793, 8837, 7320, 8478, 6063, 5751, 9716, 5085, 7315, 7859, 6628, 5425, 6331, 7097, 6249, 8381, 5936, 8496, 6934, 8347, 7036, 6421, 6510, 5821, 8602, 5312, 7836, 8032, 9871, 5990, 6309, 7825]
+Your function should return the 20 year estimate of the stairs climbed using the formula above.
+
+## Process/learned:
+
+1. The first thing i did to solve this problem is visualize what i want to happen in from the input i am given. So first i console log the input.
+
+2. After visualizing and seeing the input, i knew i had to have a for loop so i can go through the array of arrays.
+
+3. I thought i might need a second for loop, but i thought instead of using an O of N^2, let me use an O^n function. So i googled the reduce method and how to use it on the MDN website.
+
+4. Then i saw what i wanted to have the reduce method to do, which was adding every element in the inner array of arrays. I stored that function in a variable which i will use later.
+
+5. Then i moved inside the for loop that i created and had sum which was the variable that would hold the total equal sum plus the reduce of every element in each individual array.
+
+6. This gave me the total of numbers of every array which i multiplied by 20 which is the estimated amount of time to get the final result which i returned to end the function.   
