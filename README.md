@@ -907,3 +907,33 @@ Your function should return the 20 year estimate of the stairs climbed using the
 5. Then i moved inside the for loop that i created and had sum which was the variable that would hold the total equal sum plus the reduce of every element in each individual array.
 
 6. This gave me the total of numbers of every array which i multiplied by 20 which is the estimated amount of time to get the final result which i returned to end the function.   
+
+## 8 kyu A wolf in sheep's clothing:
+
+A wolf in sheep's clothing
+Wolves have been reintroduced to Great Britain. You are a sheep farmer, and are now plagued by wolves which pretend to be sheep. Fortunately, you are good at spotting them.
+
+Warn the sheep in front of the wolf that it is about to be eaten. Remember that you are standing at the front of the queue which is at the end of the array:
+
+[sheep, sheep, sheep, sheep, sheep, wolf, sheep, sheep]      (YOU ARE HERE AT THE FRONT OF THE QUEUE)
+   7      6      5      4      3            2      1
+If the wolf is the closest animal to you, return "Pls go away and stop eating my sheep". Otherwise, return "Oi! Sheep number N! You are about to be eaten by a wolf!" where N is the sheep's position in the queue.
+
+Note: there will always be exactly one wolf in the array.
+
+Examples
+warnTheSheep(["sheep", "sheep", "sheep", "wolf", "sheep"]) === "Oi! Sheep number 1! You are about to be eaten by a wolf!"
+
+warnTheSheep(["sheep", "sheep", "wolf"]) === "Pls go away and stop eating my sheep"
+
+## Process/Learned:
+
+1. The first thing i ddi to solve this problem is visualize how i would go through the given input which is an array data type.
+
+2. Then i focused on taking a look at that data by console logging it.
+
+3. Then i went and created a for loop that would start at the end of the array and decrement down until it reaches the first element in the array. I also created a counter variable that would hold a count and increment by 1 every time i go through each element in the array.
+
+4. Then i formed an if conditional that would look for the last element in the array. If that element is the string wolf, it would return ("Pls go away and stop eating my sheep").
+
+5. Else another conditional would be looking for the wolf string inside the array and would return the string ("Oi! Sheep number 1! You are about to be eaten by a wolf!") and the position of where the sheep that is about to be eaten is. The counter variable would hold that position because the less than or equal sign matches the index position in the array.    
