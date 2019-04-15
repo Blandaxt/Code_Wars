@@ -936,4 +936,59 @@ warnTheSheep(["sheep", "sheep", "wolf"]) === "Pls go away and stop eating my she
 
 4. Then i formed an if conditional that would look for the last element in the array. If that element is the string wolf, it would return ("Pls go away and stop eating my sheep").
 
-5. Else another conditional would be looking for the wolf string inside the array and would return the string ("Oi! Sheep number 1! You are about to be eaten by a wolf!") and the position of where the sheep that is about to be eaten is. The counter variable would hold that position because the less than or equal sign matches the index position in the array.    
+5. Else another conditional would be looking for the wolf string inside the array and would return the string ("Oi! Sheep number 1! You are about to be eaten by a wolf!") and the position of where the sheep that is about to be eaten is. The counter variable would hold that position because the less than or equal sign matches the index position in the array.   
+
+## 8 kyu Simple Fun #1: Seats in Theater:
+Task
+Your friend advised you to see a new performance in the most popular theater in the city. He knows a lot about art and his advice is usually good, but not this time: the performance turned out to be awfully dull. It's so bad you want to sneak out, which is quite simple, especially since the exit is located right behind your row to the left. All you need to do is climb over your seat and make your way to the exit.
+
+The main problem is your shyness: you're afraid that you'll end up blocking the view (even if only for a couple of seconds) of all the people who sit behind you and in your column or the columns to your left. To gain some courage, you decide to calculate the number of such people and see if you can possibly make it to the exit without disturbing too many people.
+
+Given the total number of rows and columns in the theater (nRows and nCols, respectively), and the row and column you're sitting in, return the number of people who sit strictly behind you and in your column or to the left, assuming all seats are occupied.
+
+Example
+For nCols = 16, nRows = 11, col = 5 and row = 3, the output should be
+
+seatsInTheater(nCols, nRows, col, row) === 96
+Here is what the theater looks like:
+
+
+
+Input/Output
+[input] integer nCols
+
+An integer, the number of theater's columns.
+
+Constraints: 1 ≤ nCols ≤ 1000.
+
+[input] integer nRows
+
+An integer, the number of theater's rows.
+
+Constraints: 1 ≤ nRows ≤ 1000.
+
+[input] integer col
+
+An integer, the column number of your own seat (with the rightmost column having index 1).
+
+Constraints: 1 ≤ col ≤ nCols.
+
+[input] integer row
+
+An integer, the row number of your own seat (with the front row having index 1).
+
+Constraints: 1 ≤ row ≤ nRows.
+
+[output] an integer
+
+The number of people who sit strictly behind you and in your column or to the left.
+
+## Process/Learned:
+
+1. I knew i wanted to multiply the rows by the colums, but i wasn't sure how to go about forming the equation.
+
+2. I then thought to subtract the total amount of rows and colums by the current row and colum individually that we are located at.
+
+3. For the rows, i had to subtract it by 1 then take the result from subtraction for both the colums and rows and multiply them together.
+
+4. That result is the amount of people that he will block as he i trying to leave the theater.    
