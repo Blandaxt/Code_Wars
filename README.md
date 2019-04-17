@@ -991,4 +991,36 @@ The number of people who sit strictly behind you and in your column or to the le
 
 3. For the rows, i had to subtract it by 1 then take the result from subtraction for both the colums and rows and multiply them together.
 
-4. That result is the amount of people that he will block as he i trying to leave the theater.    
+4. That result is the amount of people that he will block as he i trying to leave the theater.
+
+## 8 kyu Sum Arrays:
+Sum Array
+Write a method sum (sum_array in python, SumArray in C#) that takes an array of numbers and returns the sum of the numbers. These may be integers or decimals for Ruby and any instance of Num for Haskell. The numbers can also be negative. If the array does not contain any numbers then you should return 0.
+
+Examples
+numbers = [1, 5.2, 4, 0, -1]
+puts sum(numbers)
+9.2
+Assumptions
+You can assume that you are only given numbers.
+You cannot assume the size of the array.
+You can assume that you do get an array and if the array is empty, return 0.
+What We're Testing
+We're testing basic loops and math operations. This is for beginners who are just learning loops and math operations.
+
+Disclaimer
+This is for beginners so we want to test basic loops and math operations. Advanced users may find this extremely easy and can easily write this in one line.
+
+## Process/Learned:
+
+1. I started this fucntion with the assumption that i would be using the reduce method, but what i did not account for was for any edge cases.
+
+2. First step i took was to create a console.log to see the input i am given and the result i am returning.  
+
+3. Second step i took was to create my reduce function and store it in a const variable.
+
+4. Third step was to call that reduce function in a reduce method that is targeting the given array.
+
+5. Then i returned that result and saw i was getting errors. That is when i saw my edge case of an emnpty array and had to create and if conditional for that.
+
+6. After i created the if conditional targeting the given array and see if it equal the null data type, i pressed the attempt button and i was getting all greens marks for the correct answer. Love it the end.   
