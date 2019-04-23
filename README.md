@@ -1021,6 +1021,43 @@ This is for beginners so we want to test basic loops and math operations. Advanc
 
 4. Third step was to call that reduce function in a reduce method that is targeting the given array.
 
-5. Then i returned that result and saw i was getting errors. That is when i saw my edge case of an emnpty array and had to create and if conditional for that.
+5. Then i returned that result and saw i was getting errors. That is when i saw my edge case of an empty array and had to create and if conditional for that.
 
-6. After i created the if conditional targeting the given array and see if it equal the null data type, i pressed the attempt button and i was getting all greens marks for the correct answer. Love it the end.   
+6. After i created the if conditional targeting the given array and see if it equal the null data type, i pressed the attempt button and i was getting all greens marks for the correct answer. Love it the end.
+
+## 7 kyu Growth of a Population:
+
+In a small town the population is p0 = 1000 at the beginning of a year. The population regularly increases by 2 percent per year and moreover 50 new inhabitants per year come to live in the town. How many years does the town need to see its population greater or equal to p = 1200 inhabitants?
+
+At the end of the first year there will be:
+1000 + 1000 * 0.02 + 50 => 1070 inhabitants
+
+At the end of the 2nd year there will be:
+1070 + 1070 * 0.02 + 50 => 1141 inhabitants (number of inhabitants is an integer)
+
+At the end of the 3rd year there will be:
+1141 + 1141 * 0.02 + 50 => 1213
+
+It will need 3 entire years.
+More generally given parameters:
+
+p0, percent, aug (inhabitants coming or leaving each year), p (population to surpass)
+
+the function nb_year should return n number of entire years needed to get a population greater or equal to p.
+
+aug is an integer, percent a positive or null number, p0 and p are positive integers (> 0)
+
+Examples:
+nb_year(1500, 5, 100, 5000) -> 15
+nb_year(1500000, 2.5, 10000, 2000000) -> 10
+Note: Don't forget to convert the percent parameter as a percentage in the body of your function: if the parameter percent is 2 you have to convert it to 0.02.
+
+## Process/Learned:
+
+1. The process i took for this problem was first to console.log the parameters i was given. Then i thought i should convert any integers i have that need to be in a certain form like my percentage. And have my starting variables like the total population i start with and the amount of years it would take from that initial population to reach the destination number the function gives me.
+
+2. Since i knew my destination, i thought a while loop would be perfect for this function. So i set up my while loop to keep looping while the initial value is less than the destination value.
+
+3. While this while loop is running i am doing my math equation where i am multiplying the percentage by the current amount and adding any augment like the amount of settlers that are added to the population. Then making that the new total.   
+
+4. This keeps happening while the current value for the population is less than the destination value. And while that is happening i am adding the amount of years this is taking to happen and returning that value at the end once the loops fininshes.       
