@@ -1,4 +1,4 @@
-
+Elements
 ![Bumps in the Road 2018-07-05 at 12.30.33 AM](carbump.png)
 
 
@@ -1060,4 +1060,25 @@ Note: Don't forget to convert the percent parameter as a percentage in the body 
 
 3. While this while loop is running i am doing my math equation where i am multiplying the percentage by the current amount and adding any augment like the amount of settlers that are added to the population. Then making that the new total.   
 
-4. This keeps happening while the current value for the population is less than the destination value. And while that is happening i am adding the amount of years this is taking to happen and returning that value at the end once the loops fininshes.       
+4. This keeps happening while the current value for the population is less than the destination value. And while that is happening i am adding the amount of years this is taking to happen and returning that value at the end once the loops finishes.
+
+##8 kyu If you can't sleep, just count sheep!!:
+
+If you can't sleep, just count sheep!!
+
+Task:
+Given a non-negative integer, 3 for example, return a string with a murmur: "1 sheep...2 sheep...3 sheep...". Input will always be valid, i.e. no negative integers.
+
+## Process/Learned:
+
+1. For this problem, i had to think about how to use map, join, spread syntax and the array method.
+
+2. The first thing i did was to see how much number the function gave me.
+
+3. Then i created a variable which would hold the function that would take in the parameter as an array using the Array method.
+
+4. Then i would map through this array and find the index of each Element in the new temp array by passing in 2 parameters into the function.
+
+5. Then i use template literal to add the number of the input and the string sheep with the periods.
+
+6. Then lastly, i would join them together in the array and return it at the end of the function.  
