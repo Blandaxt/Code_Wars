@@ -1082,3 +1082,15 @@ Given a non-negative integer, 3 for example, return a string with a murmur: "1 s
 5. Then i use template literal to add the number of the input and the string sheep with the periods.
 
 6. Then lastly, i would join them together in the array and return it at the end of the function.  
+
+## 8 kyu Beginner - Reduce but Grow:
+
+Given a non-empty array of integers, return the result of multiplying the values together in order. Example:
+
+[1, 2, 3, 4] => 1 * 2 * 3 * 4 = 24
+
+## Process/Learned:
+
+1. This problem was a bit easy. I knew the reduce function, so i knew hot to use operators to reduce an array.
+
+2. So then i use the reduce method on a function i made that uses the multiply operator. And directed that method towards the array and return that value.  
