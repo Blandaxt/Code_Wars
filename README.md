@@ -1094,3 +1094,19 @@ Given a non-empty array of integers, return the result of multiplying the values
 1. This problem was a bit easy. I knew the reduce function, so i knew hot to use operators to reduce an array.
 
 2. So then i use the reduce method on a function i made that uses the multiply operator. And directed that method towards the array and return that value.  
+
+## 8 kyu get character from ASCII Value:
+
+Get character from ASCII Value
+
+Write a function getChar/GetChar/get_char which takes a number and returns the corresponding ASCII char for that value.
+
+Example:
+
+getChar(65) # => 'A'
+
+## Process/Learned:
+
+1. This problem was one of the best discoveries I have ever had. Being able to pull up any character via a number is just a very interesting method.
+
+2. After googling how to get character from a number I go the method String.fromCharCode(). Then i plugged in the variable and return the line of code. And i got the answer. Very nice and simple problem.  
