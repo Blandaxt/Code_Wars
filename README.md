@@ -1109,4 +1109,67 @@ getChar(65) # => 'A'
 
 1. This problem was one of the best discoveries I have ever had. Being able to pull up any character via a number is just a very interesting method.
 
-2. After googling how to get character from a number I go the method String.fromCharCode(). Then i plugged in the variable and return the line of code. And i got the answer. Very nice and simple problem.  
+2. After googling how to get character from a number I go the method String.fromCharCode(). Then i plugged in the variable and return the line of code. And i got the answer. Very nice and simple problem.
+
+## 8 kyu Will there be enough space?
+
+The Story:
+Bob is working as a bus driver. However, he has become extremely popular amongst the city's residents. With so many passengers wanting to get aboard his bus, he sometimes has to face the problem of not enough space left on the bus! He wants you to write a simple program telling him if he will be able to fit all the passengers.
+Task Overview:
+You have to write a function that accepts three parameters:
+
+cap is the amount of people the bus can hold excluding the driver.
+on is the number of people on the bus.
+wait is the number of people waiting to get on to the bus.
+If there is enough space, return 0, and if there isn't, return the number of passengers he can't take.
+
+Usage Examples:
+enough(10, 5, 5);
+// 0, He can fit all 5 passengers
+enough(100, 60, 50);
+// 10, He can't fit 10 out of 50 waiting
+
+## Process/Learned:
+
+1. In this problem, it was a simple if or else function.
+
+2. First i created a console.log that would check each param and the total variable that i created that is the total passengers on the bus plus the amount of passengers waiting to get on the bus.
+
+3. Then i set return 0 as the default return value and then i set it up a conditional that would check if the total variable is greater than the cap, it would return the total - the cap which is how many passengers are left.
+
+## 8 kyu Student's Final Grade:
+
+Create a function finalGrade, which calculates the final grade of a student depending on two parameters: a grade for the exam and a number of completed projects.
+
+This function should take two arguments: exam - grade for exam (from 0 to 100); projects - number of completed projects (from 0 and above);
+
+This function should return a number (final grade). There are four types of final grades:
+
+100, if a grade for the exam is more than 90 or if a number of completed projects more than 10.
+90, if a grade for the exam is more than 75 and if a number of completed projects is minimum 5.
+75, if a grade for the exam is more than 50 and if a number of completed projects is minimum 2.
+0, in other cases
+Examples:
+
+finalGrade(100, 12);  // 100
+finalGrade(99, 0);    // 100
+finalGrade(10, 15);   // 100
+
+finalGrade(85, 5);    // 90
+
+finalGrade(55, 3);    // 75
+
+finalGrade(55, 0);    // 0
+finalGrade(20, 2);    // 0
+
+Use Comparison and Logical Operators.
+
+## Process/Learned:
+
+1. For this problem, i had to make many if conditionals and use the and operator with it.
+
+2. I started by console.log the parameters. Then i rant it through an initial if conditional to uses the OR operator to check if the given params for grade exam is over 100 or if the amount of projects completed is over 10. If true, the if would return 100.
+
+3. The same is done for the other two if conditionals where if the parameters are over a given value, the conditional would return 90 or 75.
+
+4. Lastly i had a default return of 0 if non of the of conditionals matches as true.  
