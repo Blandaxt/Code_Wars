@@ -1173,3 +1173,15 @@ Use Comparison and Logical Operators.
 3. The same is done for the other two if conditionals where if the parameters are over a given value, the conditional would return 90 or 75.
 
 4. Lastly i had a default return of 0 if non of the of conditionals matches as true.  
+
+##8 kyu Is the date today:
+
+Write a simple function that takes as a parameter a date object and returns a boolean value representing whether the date is today or not.
+
+Make sure that your function does not return a false positive by just checking just the day.
+
+## Process/ Learned:
+
+1. This problem threw me off because i thought i only had to convert the date object to a string value in order to match it to the date object given. So i thought the .toString() method would solve it easily and all i had to do is return true or false if they matched.
+
+2. I was wrong because i did not think about the time value in the date object. So i had to find out how to only get the date value to a string data the and ignore the time value. And that is where the .toDateString() method came in handy. It converts the date object to a string format and it excludes the time value allowing me to get every test attempt correct.   
