@@ -1185,3 +1185,21 @@ Make sure that your function does not return a false positive by just checking j
 1. This problem threw me off because i thought i only had to convert the date object to a string value in order to match it to the date object given. So i thought the .toString() method would solve it easily and all i had to do is return true or false if they matched.
 
 2. I was wrong because i did not think about the time value in the date object. So i had to find out how to only get the date value to a string data the and ignore the time value. And that is where the .toDateString() method came in handy. It converts the date object to a string format and it excludes the time value allowing me to get every test attempt correct.   
+
+## 8 kyu Do you speak "English"?:
+
+Given a string of arbitrary length with any ascii characters. Write a function to determine whether the string contains the whole word "English".
+
+The order of characters is important -- a string "abcEnglishdef" is correct but "abcnEglishsef" is not correct.
+
+Upper or lower case letter does not matter -- "eNglisH" is also correct.
+
+Return value as boolean values, true for the string to contains "English", false for it does not.
+
+## Process/Learned:
+
+1. For this problem i used substring to solve the answer by grabbing the position of the first letter in english which is e and the last letter which is h and comparing it to a string english after converting the given word to lowercase.
+
+2. The hardest part in solving this problem was because i was stacking my if conditions on top of each other thinking it would just follow one after each other. But i was running into problems where the second if condition would not fire.
+
+3. So after separating each of my if conditions into individual components, my function worked perfectly. This has taught me that if conditions can sometimes bar each other from fire-ring if they are under the wrong stack.  
