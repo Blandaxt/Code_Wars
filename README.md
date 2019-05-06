@@ -1203,3 +1203,24 @@ Return value as boolean values, true for the string to contains "English", false
 2. The hardest part in solving this problem was because i was stacking my if conditions on top of each other thinking it would just follow one after each other. But i was running into problems where the second if condition would not fire.
 
 3. So after separating each of my if conditions into individual components, my function worked perfectly. This has taught me that if conditions can sometimes bar each other from fire-ring if they are under the wrong stack.  
+
+## 8 kyu Return the day:
+
+Complete the function which returns the weekday according to the input number:
+
+1 returns "Sunday"
+2 returns "Monday"
+3 returns "Tuesday"
+4 returns "Wednesday"
+5 returns "Thursday"
+6 returns "Friday"
+7 returns "Saturday"
+Otherwise returns "Wrong, please enter a number between 1 and 7"
+
+## Process/Learned:
+
+1. For this problem, from reading out the problem, i already knew this was a if else/switch case sort of problem. So then i decided to try out the conditional (ternary) operator.
+
+2. I started by asking the function if the number that is given to me is between 1 and 7. If it is, i would return a day of the week. But if the number is greater then 7 or less than 1, i would return the default "Wrong, please enter a number between 1 and 7".
+
+3. This is my first successful use of the ternary operator and i am feeling more confident using it in future functions.    
