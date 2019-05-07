@@ -1224,3 +1224,30 @@ Otherwise returns "Wrong, please enter a number between 1 and 7"
 2. I started by asking the function if the number that is given to me is between 1 and 7. If it is, i would return a day of the week. But if the number is greater then 7 or less than 1, i would return the default "Wrong, please enter a number between 1 and 7".
 
 3. This is my first successful use of the ternary operator and i am feeling more confident using it in future functions.    
+
+##  This is a sadly story #1: Are they opposite?
+
+Instructions
+Output
+They say that only the name is long enough to attract attention. They also said that only a simple Kata will have someone to solve it series #1:
+Are they opposite?
+
+#Task
+Give you two strings: s1 and s2. If they are opposite, return true; otherwise, return false. Note: The result should be a boolean value, instead of a string.
+
+The opposite means: All letters of the two strings are the same, but the case is opposite. you can assume that the string only contains letters or it's a empty string. Also take note of the edge case - if both strings are empty then you should return false/False.
+
+#Some examples:
+isOpposite("ab","AB") should return true;
+isOpposite("aB","Ab") should return true;
+isOpposite("aBcd","AbCD") should return true;
+isOpposite("AB","Ab") should return false;
+isOpposite("","") should return false;
+
+## Process/Learned:
+
+1. In this problem, i knew i had to compare two different strings. And because i was lookin to see if their case sensitivity is opposite. So i first created an if conditional that would check if the two strings are equal from the beginning.
+
+2. If the strings from a lower case base does not equal the same, then i know the words are different. I would return false for both of the conditionals.
+
+3. Lastly, i would check the sort order and if the order of the words are of a different. If the sort order is different, i would also return false. Meaning they are not opposites. Otherwise, I would return true for all other cases.    
