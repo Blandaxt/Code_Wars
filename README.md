@@ -1250,4 +1250,41 @@ isOpposite("","") should return false;
 
 2. If the strings from a lower case base does not equal the same, then i know the words are different. I would return false for both of the conditionals.
 
-3. Lastly, i would check the sort order and if the order of the words are of a different. If the sort order is different, i would also return false. Meaning they are not opposites. Otherwise, I would return true for all other cases.    
+3. Lastly, i would check the sort order and if the order of the words are of a different. If the sort order is different, i would also return false. Meaning they are not opposites. Otherwise, I would return true for all other cases.  
+
+## Training JS #5: Basic data types--Object:
+
+Training JS #5:
+Basic data types--Object
+
+In javascript, Object is one of basic data types. Define an Object can use var obj=new Object() or var obj={}
+
+You can define the object attributes during initialization, like this:
+
+var animal={name:"dog"}
+you can also set/get some properties after the object definition, like this:
+
+var animal={}
+animal.name="dog"  (or animal["name"]="dog")
+#Task
+Give you a function ```animal```, accept 1 parameter:```obj``` like this:
+
+```
+{name:"dog",legs:4,color:"white"}
+```
+
+and return a string like this:
+
+```
+"This white dog has 4 legs."
+```
+
+## Process/Learned:
+
+1. For this problem, i had to think how object data types behave and how to retrieve information from them. There are two ways to set and retrieve information from an object. First one is dot notation and second is bracket notation.
+
+2. I am more comfortable with bracket notation so i used that instead. The first thing i did is console.log the object parameter i will be interacting with.
+
+3. Then after seeing all the keys in the object, i knew which key to call and where inside of my template literal string.
+
+4. After placing the correct object keys in their place in the string and returning it, i solved the problem.    
