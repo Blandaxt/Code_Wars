@@ -1287,4 +1287,30 @@ and return a string like this:
 
 3. Then after seeing all the keys in the object, i knew which key to call and where inside of my template literal string.
 
-4. After placing the correct object keys in their place in the string and returning it, i solved the problem.    
+4. After placing the correct object keys in their place in the string and returning it, i solved the problem.
+
+## 8 kyu Exclamation marks series #6: Remove n exclamation marks in the sentence from left to right:
+
+Description:
+Remove n exclamation marks in the sentence from left to right. n is positive integer.
+
+Examples
+remove("Hi!",1) === "Hi"
+remove("Hi!",100) === "Hi"
+remove("Hi!!!",1) === "Hi!!"
+remove("Hi!!!",100) === "Hi"
+remove("!Hi",1) === "Hi"
+remove("!Hi!",1) === "Hi!"
+remove("!Hi!",100) === "Hi"
+remove("!!!Hi !!hi!!! !hi",1) === "!!Hi !!hi!!! !hi"
+remove("!!!Hi !!hi!!! !hi",3) === "Hi !!hi!!! !hi"
+remove("!!!Hi !!hi!!! !hi",5) === "Hi hi!!! !hi"
+remove("!!!Hi !!hi!!! !hi",100) === "Hi hi hi"
+
+## Process/Learned:
+
+1. This codewar was fairly difficult for me where i had to replace/remove the exclamation marks in the string.
+
+2. At first i tried to use the splice method where i would remove any exclamation i ran into as the function loops through the string that is turned into an array.
+
+3. That unfortunately did not work out, so i changed to the replace method where i replaced every exclamation mark with an empty string. That worked out wonderfully and i did not have to use any conditional for it.    
