@@ -1317,11 +1317,11 @@ remove("!!!Hi !!hi!!! !hi",100) === "Hi hi hi"
 
 ## 8 kyu A Strange Trip to the Market:
 
-You're on your way to the market when you hear beautiful music coming from a nearby street performer. The notes come together like you wouln't believe as the musician puts together patterns of tunes. As you wonder what kind of algorithm you could use to shift octaves by 8 pitches or something silly like that, it dawns on you that you have been watching the musician for some 10 odd minutes. You ask, "How much do people normally tip for something like this?" The artist looks up. "Its always gonna be about tree fiddy."
+You're on your way to the market when you hear beautiful music coming from a nearby street performer. The notes come together like you wouldn't believe as the musician puts together patterns of tunes. As you wonder what kind of algorithm you could use to shift octaves by 8 pitches or something silly like that, it dawns on you that you have been watching the musician for some 10 odd minutes. You ask, "How much do people normally tip for something like this?" The artist looks up. "Its always gonna be about tree fiddy."
 
-It was then that you realize the musician was a 400 foot tall beast from the paleolithic era. The Loch Ness Monster almost tricked you!
+It was then that you realize the musician was a 400 foot tall beast from the Paleolithic era. The Loch Ness Monster almost tricked you!
 
-There are only 2 guaranteed ways to tell if you are speaking to The Loch Ness Monster: A.) It is a 400 foot tall beast from the paleolithic era B.) It will ask you for tree fiddy
+There are only 2 guaranteed ways to tell if you are speaking to The Loch Ness Monster: A.) It is a 400 foot tall beast from the Paleolithic era B.) It will ask you for tree fiddy
 
 Since Nessie is a master of disguise, the only way accurately tell is to look for the phrase "tree fiddy". Since you are tired of being grifted by this monster, the time has come to code a solution for finding The Loch Ness Monster. Note: It can also be written as 3.50 or three fifty.
 
@@ -1331,4 +1331,20 @@ Since Nessie is a master of disguise, the only way accurately tell is to look fo
 
 2. So i use .includes to search the strings for any of the phrases that are my targets that would give away the LockNessMonster. Once i found it, i would return the whole string.
 
-3. What did throw me off was knowing what to return if the strings did not have what i was looking for. So i had to experiment with an empty string with a space to just an empty string that worked out.  
+3. What did throw me off was knowing what to return if the strings did not have what i was looking for. So i had to experiment with an empty string with a space to just an empty string that worked out.
+
+## 8 kyu Are You Playing Banjo?:
+
+Create a function which answers the question "Are you playing banjo?".
+If your name starts with the letter "R" or lower case "r", you are playing banjo!
+
+The function takes a name as its only argument, and returns one of the following strings:
+
+name + " plays banjo"
+name + " does not play banjo"  
+
+## Process/Learned:
+
+1. There was not much to learn in this codewar. I solved it by first taking a look at the string given from the parameter with the console, then using the method charAt i took the first starting letter and used the ternary operator to determine if the first letter of that name started with a capital R or a lower case r.
+
+2. If it is true, i would return the name plus plays banjo and if not true, it would return name plus concatenating does not play banjo.  
