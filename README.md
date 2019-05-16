@@ -1347,4 +1347,16 @@ name + " does not play banjo"
 
 1. There was not much to learn in this codewar. I solved it by first taking a look at the string given from the parameter with the console, then using the method charAt i took the first starting letter and used the ternary operator to determine if the first letter of that name started with a capital R or a lower case r.
 
-2. If it is true, i would return the name plus plays banjo and if not true, it would return name plus concatenating does not play banjo.  
+2. If it is true, i would return the name plus plays banjo and if not true, it would return name plus concatenating does not play banjo.
+
+##  8 kyu Reverse List Order:
+
+In this kata you will create a function that takes in a list and returns a list with the reverse order.
+
+Examples
+reverseList([1,2,3,4]) == [4,3,2,1]
+reverseList([3,1,5,4]) == [4,5,1,3]
+
+## Process/Learned:
+
+1. I reversed the array by using the reverse method it changes the first and last elements location which reverse the array. 
