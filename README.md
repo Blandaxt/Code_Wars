@@ -1359,4 +1359,18 @@ reverseList([3,1,5,4]) == [4,5,1,3]
 
 ## Process/Learned:
 
-1. I reversed the array by using the reverse method it changes the first and last elements location which reverse the array. 
+1. I reversed the array by using the reverse method it changes the first and last elements location which reverse the array.
+
+## 7 kyu Blood Moon:
+
+Alan is going to watch the Blood Moon (lunar eclipse) tonight for the first time in his life. But his mother, who is a history teacher, thinks the Blood Moon comes with an evil intent. The ancient Inca people interpreted the deep red coloring as a jaguar attacking and eating the moon. But who believes in Inca myths these days? So, Alan decides to prove to her mom that there is no jaguar. How? Well, only little Alan knows that. For now, he needs a small help from you. Help him solve the following calculations so that he gets enough time to prove it before the eclipse starts.
+
+Screenshot-3
+Three semicircles are drawn on AB, AD, and AF. Here CD is perpendicular to AB and EF is perpendicular to AD.
+
+Task
+Given the radius of the semicircle ADBCA, find out the area of the lune AGFHA (the shaded area).
+
+## Process/Learned:
+
+1. The process i took for this problem was to multiply the radius by itself so as to get a full circle from the semi circle then divide it by the 4 points given from the shaded square. This gave me the area of the shaded lune. 
