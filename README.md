@@ -1373,4 +1373,20 @@ Given the radius of the semicircle ADBCA, find out the area of the lune AGFHA (t
 
 ## Process/Learned:
 
-1. The process i took for this problem was to multiply the radius by itself so as to get a full circle from the semi circle then divide it by the 4 points given from the shaded square. This gave me the area of the shaded lune. 
+1. The process i took for this problem was to multiply the radius by itself so as to get a full circle from the semi circle then divide it by the 4 points given from the shaded square. This gave me the area of the shaded lune.
+
+## 7 kyu 99 Problems, #1: last in list:
+
+Write a function last that accepts a list and returns the last element in the list.
+
+If the list is empty:
+
+In languages that have a built-in option or result type (like OCaml or Haskell), return an empty option
+
+In languages that do not have an empty option, just return null
+
+## Process/Learned:
+
+1. The process i solve this problem was to first console.log the values i am working with. After knowing i will be working with arrays, i then think of how to retrieve the last element in the array using bracket notation.
+
+2. Then i use a ternary operator to se if the first element in the array is equal to undefined. If it is, the function would return a null. If not, i would retrieve the last element from the array using bracket notation and return it. 
