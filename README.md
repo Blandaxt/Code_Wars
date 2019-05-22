@@ -1389,4 +1389,34 @@ In languages that do not have an empty option, just return null
 
 1. The process i solve this problem was to first console.log the values i am working with. After knowing i will be working with arrays, i then think of how to retrieve the last element in the array using bracket notation.
 
-2. Then i use a ternary operator to se if the first element in the array is equal to undefined. If it is, the function would return a null. If not, i would retrieve the last element from the array using bracket notation and return it. 
+2. Then i use a ternary operator to se if the first element in the array is equal to undefined. If it is, the function would return a null. If not, i would retrieve the last element from the array using bracket notation and return it.
+
+## 7 kyu The Office I - Outed:
+
+Your colleagues have been looking over you shoulder. When you should have been doing your boring real job, you've been using the work computers to smash in endless hours of codewars.
+
+In a team meeting, a terrible, awful person declares to the group that you aren't working. You're in trouble. You quickly have to gauge the feeling in the room to decide whether or not you should gather your things and leave.
+
+Given an object (meet) containing team member names as keys, and their happiness rating out of 10 as the value, you need to assess the overall happiness rating of the group. If <= 5, return 'Get Out Now!'. Else return 'Nice Work Champ!'.
+
+Happiness rating will be total score / number of people in the room.
+
+Note that your boss is in the room (boss), their score is worth double it's face value (but they are still just one person!).
+
+## Process/Learned:
+
+1. For this codewars, i had to think of many ways to represent the data in the object in different forms of data. Then i had to change one part of the object, then finally use the data to decide to return a string data of two choices.
+
+2. This first thing i did was to console.log the different forms of data i will use and the data i want to see in the log that represents the previous form of the object before it changed and after it changed.
+
+3. After seeing all the forms i will be utilizing like the object's values and the objects's keys length value, etc.. I then moved to check if i could find the boss in the object.
+
+4. If i did find it, i would double the value for the boss and then turn all those values into an array. I manage to double the value by multiplying the initial value by 2 and setting that new value to the object.
+
+5. Once that was done, reduced the array of values to one integer by adding every element in the array together. Then i divided the amount of keys which represent the amount of people in the meeting to the total amount of happiness values which gave me the overall rating.
+
+6. I used this rating to determine which string value should i return. If the overall value was greater than 5, i would return "Nice Work Cham!". If not, i would return "Get Out Now!".
+
+7. The hardest part of this codewars was to determine the location of the boss's value in the array and comparing it to the value of the boss's value in the original object.
+
+8. The easiest part is reducing the array to one interger.   
