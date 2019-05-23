@@ -1420,3 +1420,21 @@ Note that your boss is in the room (boss), their score is worth double it's face
 7. The hardest part of this codewars was to determine the location of the boss's value in the array and comparing it to the value of the boss's value in the original object.
 
 8. The easiest part is reducing the array to one interger.   
+
+## 7 kyu Ultimate Array Reverser:
+
+Given an array of strings, reverse them and their order in such way that their length stays the same as the length of the original inputs.
+
+Example:
+Input:  {"I", "like", "big", "butts", "and", "I", "cannot", "lie!"}
+Output: {"!", "eilt", "onn", "acIdn", "ast", "t", "ubgibe", "kilI"}
+
+## Process/Learned:
+
+1. This problem was not easy to figure out and solve at first glance. I had to used different combination of reverse, join and split plus splice and push.
+
+2. The first thing i did was console.log the given array. Then i went to split, reverse and join each element in the array.
+
+3. I later found that was the wrong path and i had to join, split and reverse the array. This way the whole string as one can be reversed as one so that i can now take chunks of it using splice and the length of each element from the original array.
+
+4. Each chunk i took off with splice, i added to an empty array and lastly i return that array.  
