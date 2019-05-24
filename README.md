@@ -1437,4 +1437,22 @@ Output: {"!", "eilt", "onn", "acIdn", "ast", "t", "ubgibe", "kilI"}
 
 3. I later found that was the wrong path and i had to join, split and reverse the array. This way the whole string as one can be reversed as one so that i can now take chunks of it using splice and the length of each element from the original array.
 
-4. Each chunk i took off with splice, i added to an empty array and lastly i return that array.  
+4. Each chunk i took off with splice, i added to an empty array and lastly i return that array.
+
+## 7 kyu JavaScript Array Filter:
+
+JavaScript Arrays support a filter function (starting in JavaScript 1.6). Use the filter functionality to complete the function given.
+
+The solution would work like the following:
+
+getEvenNumbers([2,4,5,6]) // should == [2,4,6]
+
+## Process/Learned:
+
+1. In this problem, i have to figure out how to remove the odd numbers form the given array. So i decided to first take a look at the array by console.log. Then i went ahead and looked up the modulous operator to see how i would create this function that i would feed to the filter method.
+
+2. After understanding that the modulous operator is for remainders, I then created a function that tested for every element in the array if it was divisible by 2 and if the remainder was 0.
+
+3. i then created my filter function that checked every number in the given array and removed any numbers that were not divisible by 2.
+
+4. Then i returned that new array even if it is empty. 
