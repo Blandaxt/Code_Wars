@@ -1455,4 +1455,24 @@ getEvenNumbers([2,4,5,6]) // should == [2,4,6]
 
 3. i then created my filter function that checked every number in the given array and removed any numbers that were not divisible by 2.
 
-4. Then i returned that new array even if it is empty. 
+4. Then i returned that new array even if it is empty.
+
+## 7 kyu Vowel Count:
+
+Return the number (count) of vowels in the given string.
+
+We will consider a, e, i, o, and u as vowels for this Kata.
+
+The input string will only consist of lower case letters and/or spaces.
+
+## Process/Learned:
+
+1. I solved this problem using a regex to see if the given character is a vowel or not and adding the count by one if it is.
+
+2. This problem was not too hard because i have dealt with strings before and so i knew the process to take to turn the given string into lowercase, then into an array and then using map to look through the new array.
+
+3. The hard part for me was the comparison in order to find wether the given Character in the string is a vowel. Especially when there is not not a given method that i could find that could find the differences between a consonant and a vowel.
+
+4. So after researching and not finding a method to suit me, i looked into regular expression. I knew regular expressions were us to deal with the string data type. i ended up finding a regex that suit my needs and a perfect method to go along with it (.test).
+
+5. After putting the the regex and the test together and comparing it to the given string characters, i found wether each string char is a vowel or not. And if it is a vowel, i added the count by 1. Then finally returning the final value of the count.      
