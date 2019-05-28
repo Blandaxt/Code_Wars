@@ -1476,3 +1476,27 @@ The input string will only consist of lower case letters and/or spaces.
 4. So after researching and not finding a method to suit me, i looked into regular expression. I knew regular expressions were us to deal with the string data type. i ended up finding a regex that suit my needs and a perfect method to go along with it (.test).
 
 5. After putting the the regex and the test together and comparing it to the given string characters, i found wether each string char is a vowel or not. And if it is a vowel, i added the count by 1. Then finally returning the final value of the count.      
+
+## 7 kyu Disemvowel Trolls:
+
+Trolls are attacking your comment section!
+
+A common way to deal with this situation is to remove all of the vowels from the trolls' comments, neutralizing the threat.
+
+Your task is to write a function that takes a string and return a new string with all vowels removed.
+
+For example, the string "This website is for losers LOL!" would become "Ths wbst s fr lsrs LL!".
+
+Note: for this kata y isn't considered a vowel.
+
+## Proccess/Learned:
+
+1. The process to solve this codewars is very similar to my last one where i had to identify characters in a string.
+
+2. i started the solving process by logging the given string in the console. Then i turned the string into an array, splitting it letter by letter.
+
+3. Then i tried using the splice method which gave me bad results. I would identify the vowels using the test method with a regex, but the splice method would always remove the character after the vowel instead of the vowel instead.
+
+4. So i opted for the replace method where i would replace the vowel with an empty character. This worked well, until i found out i had to look for the uppercase  vowels too.
+
+5. So i added more characters to the regex where it would identify the uppercase vowels and voila, i got the intended answer.  
