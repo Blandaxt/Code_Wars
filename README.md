@@ -1500,3 +1500,29 @@ Note: for this kata y isn't considered a vowel.
 4. So i opted for the replace method where i would replace the vowel with an empty character. This worked well, until i found out i had to look for the uppercase  vowels too.
 
 5. So i added more characters to the regex where it would identify the uppercase vowels and voila, i got the intended answer.  
+
+## 7 kyu Flatten and sort an array:
+
+Challenge:
+
+Given a two-dimensional array of integers, return the flattened version of the array with all the integers in the sorted (ascending) order.
+
+Example:
+
+Given [[3, 2, 1], [4, 6, 5], [], [9, 7, 8]], your function should return [1, 2, 3, 4, 5, 6, 7, 8, 9].
+
+Addendum:
+
+Please, keep in mind, that JavaScript is by default sorting objects alphabetically. For more information, please consult:
+
+http://stackoverflow.com/questions/6093874/why-doesnt-the-sort-function-of-javascript-work-well
+
+## Process/Learned:
+
+1. I started this problem by assuming that the array would be full of elements representing arrays. So i then thought of moving the arrays into a new array. And then sort the new array.
+
+2. I first focused on going through the array using the map method. Then I focused on going through each element in the array because i knew each element would be an array. So i further used the map method to go through each element.
+
+3. Then i focused on pushing each element in the array into a new array. This was a surprised for me because i unknowingly solved the problem where i solved the issue of sorting the array of numbers.
+
+4. But i further pushed to sorting the new array by using the sort method. Then returned the sorted array.   
