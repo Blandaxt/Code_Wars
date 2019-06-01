@@ -1525,4 +1525,37 @@ http://stackoverflow.com/questions/6093874/why-doesnt-the-sort-function-of-javas
 
 3. Then i focused on pushing each element in the array into a new array. This was a surprised for me because i unknowingly solved the problem where i solved the issue of sorting the array of numbers.
 
-4. But i further pushed to sorting the new array by using the sort method. Then returned the sorted array.   
+4. But i further pushed to sorting the new array by using the sort method. Then returned the sorted array.
+
+## 7 kyu Sexy Primes <3:
+
+Sexy primes are pairs of two primes that are 6 apart. In this kata, your job is to complete the function sexy_prime(x, y) which returns true if x & y are sexy, false otherwise.
+
+Examples:
+
+sexy_prime(5,11)
+--> True
+
+sexy_prime(61,67)
+--> True
+
+sexy_prime(7,13)
+--> True
+
+sexy_prime(5,7)
+--> False
+
+sexy_prime(1,7)
+--> False
+( 1 is not considered prime )
+Note: x & y are always positive integers > 0, but they are not always in order of precendence...you can be given either (5,11) or (11,5). Both are equally valid.
+
+## Process/Learned:
+
+1. I solved this problem by first logging the given integers.
+
+2. Then i focused on the main problem by checking if the two integers are 6 integers apart.
+
+3. Then i checked if the numbers are divisible by 2. This will check if the numbers are prime.
+
+4. Lastly i checked all the edge cases i need to get every problem correct such as the numbers do not equal 1 and 21. 
