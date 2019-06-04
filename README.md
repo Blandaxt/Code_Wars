@@ -1558,4 +1558,40 @@ Note: x & y are always positive integers > 0, but they are not always in order o
 
 3. Then i checked if the numbers are divisible by 2. This will check if the numbers are prime.
 
-4. Lastly i checked all the edge cases i need to get every problem correct such as the numbers do not equal 1 and 21. 
+4. Lastly i checked all the edge cases i need to get every problem correct such as the numbers do not equal 1 and 21.
+
+## 7 kyu How many arguments:
+
+args_count(1, 2, 3) -> 3
+args_count(1, 2, 3, 10) -> 4
+
+## Process/Learned:
+
+1. I learned from this problem that there is a specific method that can be used to count the amount of methods passed into function which is arguments.length.
+
+2. I also learned that there is a method to call the arguments as an object.
+
+## 7 kyu Consecutive letters:
+
+In this Kata, we will check if a string contains consecutive letters as they appear in the English alphabet and if each letter occurs only once.
+
+For example:
+solve("abc") = True, because it contains a,b,c
+solve("abd") = False, because a, b, d are not consecutive.
+solve("dabc") = True, because it contains a, b, c, d
+solve("abbc") = False, because b does not occur once.
+solve("v") = True
+
+##Process/Learned:
+
+1. This was one of the hardest codewars i have ever faced where i was also forced to use the brute force method.
+
+2. So the first thing i did when trying to solve this codewars is to console log the inputed string.
+
+3. Then i turned this string into an array using the split and sort method.
+
+4. Then i looked online to see if i could find a resource like the alphabets in order to serve as a comparison for the orders string. Unfortunately, i could not find any good resource and had to create an array that housed the alphabets.
+
+5. I then looped though the ordered string array and used the array i created to see if the characters were exactly equal to the characters in the string array. I would push each bollean value of the comparison result into a new array.  
+
+6. Then i did a round about check of the new array to see if any of the values were false. If there was any false values, then the function would return a false. If it did not have any false values, the function would return a true value.    
