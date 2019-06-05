@@ -1595,3 +1595,33 @@ solve("v") = True
 5. I then looped though the ordered string array and used the array i created to see if the characters were exactly equal to the characters in the string array. I would push each bollean value of the comparison result into a new array.  
 
 6. Then i did a round about check of the new array to see if any of the values were false. If there was any false values, then the function would return a false. If it did not have any false values, the function would return a true value.    
+
+## 7 kyu Printer Errors:
+
+In a factory a printer prints labels for boxes. For one kind of boxes the printer has to use colors which, for the sake of simplicity, are named with letters from a to m.
+
+The colors used by the printer are recorded in a control string. For example a "good" control string would be aaabbbbhaijjjm meaning that the printer used three times color a, four times color b, one time color h then one time color a...
+
+Sometimes there are problems: lack of colors, technical malfunction and a "bad" control string is produced e.g. aaaxbbbbyyhwawiwjjjwwm with letters not from a to m.
+
+You have to write a function printer_error which given a string will output the error rate of the printer as a string representing a rational whose numerator is the number of errors and the denominator the length of the control string. Don't reduce this fraction to a simpler expression.
+
+The string has a length greater or equal to one and contains only letters from ato z.
+
+#Examples:
+
+s="aaabbbbhaijjjm"
+error_printer(s) => "0/14"
+
+s="aaaxbbbbyyhwawiwjjjwwm"
+error_printer(s) => "8/22"
+
+## Process/Learned:
+
+1. I solved this problem by first login the given string. Then i turned the string into an array.
+
+2. Then i focused on going through the array using the map method and checking if every character in the string is from a through m. if any of the characters do not match the given criteria, the test method will return false into the new array that is created through the map method.
+
+3. I then stored this new array in a variable which i filtered using the filtered method and took out every false result in the new array.
+
+4. Then i took the length of that array concatenated with the string that includes a slash and concatenated with the length of the given string and returned thaty result.      
