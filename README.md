@@ -1624,4 +1624,41 @@ error_printer(s) => "8/22"
 
 3. I then stored this new array in a variable which i filtered using the filtered method and took out every false result in the new array.
 
-4. Then i took the length of that array concatenated with the string that includes a slash and concatenated with the length of the given string and returned thaty result.      
+4. Then i took the length of that array concatenated with the string that includes a slash and concatenated with the length of the given string and returned that result.
+
+## 7 kyu The Office II - Boredom Score:
+
+Every now and then people in the office moves teams or departments. Depending what people are doing with their time they can become more or less boring. Time to assess the current team.
+
+You will be provided with an object(staff) containing the staff names as keys, and the department they work in as values.
+
+Each department has a different boredom assessment score, as follows:
+
+accounts = 1
+finance = 2
+canteen = 10
+regulation = 3
+trading = 6
+change = 6
+IS = 8
+retail = 5
+cleaning = 4
+pissing about = 25
+
+Depending on the cumulative score of the team, return the appropriate sentiment:
+
+<=80: 'kill me now'
+< 100 & > 80: 'i can handle this'
+100 or over: 'party time!!'
+
+## Proccess/Learned:
+
+1. I solved this problem by using the data given to me through the object staff and the data given to me trough the description of the problem that is the boredome score.
+
+2. The first thing i did is log the staff object and create a new object called department that holds the boredom score for each department. I also inputed on of the departments through bracket notation because it had a space in between the characters.
+
+3. Then i went to create a function that took every staff name and gave me their departments. It also takes every department and gives me the score in an array form.
+
+4. Then i added every number in that array into an integer by using the reduce function.
+
+5. Then i did the comparison to find out if that integer if greater than a certain value and returned the appropriate statement.   
