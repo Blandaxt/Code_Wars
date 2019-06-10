@@ -1662,3 +1662,27 @@ Depending on the cumulative score of the team, return the appropriate sentiment:
 4. Then i added every number in that array into an integer by using the reduce function.
 
 5. Then i did the comparison to find out if that integer if greater than a certain value and returned the appropriate statement.   
+
+## 7 kyu Complementary DNA:
+
+Deoxyribonucleic acid (DNA) is a chemical found in the nucleus of cells and carries the "instructions" for the development and functioning of living organisms.
+
+If you want to know more http://en.wikipedia.org/wiki/DNA
+
+In DNA strings, symbols "A" and "T" are complements of each other, as "C" and "G". You have function with one side of the DNA (string, except for Haskell); you need to get the other complementary side. DNA strand is never empty or there is no DNA at all (again, except for Haskell).
+
+More similar exercise are found here http://rosalind.info/problems/list-view/ (source)
+
+DNAStrand ("ATTGC") // return "TAACG"
+
+DNAStrand ("GTAT") // return "CATA"
+
+## Process/Learned:
+
+1. I started this problem by first logging the given string. Then I pondered on what the problem description wanted me to do. After finding out that the objective wanted me to replace each character with it's counter part meaning A for T and C for G and reverse.
+
+2. Then I focused on finding a proper method to replace string characters. I found the replace method and looked into a proper regex to use with this method.
+
+3. I landed on using the period regex formation that matches any character. I used that as the regex and use a fat arrow function to match any given character with the regex.
+
+4. Then I thought I need to create an object that would hold every string match as a key and it's value the counter part. Then I inserted the object to match every string character and ran the function.   
