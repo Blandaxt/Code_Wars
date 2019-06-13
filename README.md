@@ -1685,4 +1685,55 @@ DNAStrand ("GTAT") // return "CATA"
 
 3. I landed on using the period regex formation that matches any character. I used that as the regex and use a fat arrow function to match any given character with the regex.
 
-4. Then I thought I need to create an object that would hold every string match as a key and it's value the counter part. Then I inserted the object to match every string character and ran the function.   
+4. Then I thought I need to create an object that would hold every string match as a key and it's value the counter part. Then I inserted the object to match every string character and ran the function.  
+
+## 7 kyu Get list sum recursively:
+
+Write function sumR which returns the sum of values in a given list. Try no to cheat and provide recursive solution.
+
+## Proess/Learned:
+
+1. I solved this problem by first checking the given input which is an array.
+
+2. Then I focused on the edge cases such as if the array has no value, to return 0 indicating the list is empty.
+
+3. Then i used the reduce method to add every value in the array and return the total to show how many items is in the list.
+
+## 7 kyu Offload your work!:
+
+You are the best freelancer in the city. Everybody knows you, but what they don't know, is that you are actually offloading your work to other freelancers and and you rarely need to do any work. You're living the life!
+
+To make this process easier you need to write a method called workNeeded to figure out how much time you need to contribute to a project.
+
+Giving the amount of time in minutes needed to complete the project and an array of pair values representing other freelancers' time in [Hours, Minutes] format ie. [[2, 33], [3, 44]] calculate how much time you will need to contribute to the project (if at all) and return a string depending on the case.
+
+If we need to contribute time to the project then return "I need to work x hour(s) and y minute(s)"
+If we don't have to contribute any time to the project then return "Easy Money!"
+
+## Process/Learned:
+
+1. This problem was pretty complicated for me. The first thing i did to solve this problem was to first find the given input using console log.
+
+2. The second thing I did was to think of a way to sum the given array into one digit value while also converting any hours into minutes so that they can be properly valued. So I used the map method to go through the array. Then I used the reduce method on each element in the array which are arrays themselves. And I converted each first element in the the inner array from hours to minutes by multiplying it by 60. Then i finally reduced the array that had all of the hours into the total amount of freelance hours.
+
+3. I then figured out the total amount of time left to work on the project bu subtracting the total amount of hours by the total amount of freelance hours.
+
+4. Then I find out which statement to return by using the ternary operator. I returned "Easy Money!" if the work hours in minute form is less than or equal to 0. If the work hours are greater than 0, I returned a different string "I need to work (a certain amount of hours) and (a certain amount of minutes)". I calculated the amount of hours to work by using template literal on the whole string. I divided the amount of work hours in minute form by 60 to convert it to hours and then ask the computer if the amount of hours is greater or equal 1. If it is, it would state the amount of hours. If not, it would return 0 hours. I then calculated the amount of minutes left by checking the modulus between the work hours in minute form to 60. That remainder is the amount of minutes left.   
+
+## 7 kyu Even numbers in an array:
+
+Given an array of digital numbers, return a new array of length number containing the last even numbers from the original array (in the same order). The original array will be not empty and will contain at least "number" even numbers.
+
+For example:
+
+([1, 2, 3, 4, 5, 6, 7, 8, 9], 3) => [4, 6, 8]
+([-22, 5, 3, 11, 26, -6, -7, -8, -9, -8, 26], 2) => [-8, 26]
+([6, -25, 3, 7, 5, 5, 7, -3, 23], 1) => [6]
+
+## Process/Learned:
+
+1. I solved this problem by first logging the given array and number.
+
+2. Then i got only the even numbers in the array by using the filter method. I checked if each element in the array is divisible by 2 with a remainder of 0. If it is, it can be added to the new array which is held in the variable result.
+
+3. Then i got the last numbers by using the slice method on the new array that is result. But to get the correct amount of numbers i want to keep i had to subtract the number of numbers i want to keep but the total amount of numbers in the array using the length method on the array.   
