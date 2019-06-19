@@ -1737,3 +1737,159 @@ For example:
 2. Then i got only the even numbers in the array by using the filter method. I checked if each element in the array is divisible by 2 with a remainder of 0. If it is, it can be added to the new array which is held in the variable result.
 
 3. Then i got the last numbers by using the slice method on the new array that is result. But to get the correct amount of numbers i want to keep i had to subtract the number of numbers i want to keep but the total amount of numbers in the array using the length method on the array.   
+
+## 7 kyu Rotate for a Max:
+
+Let us begin with an example:
+
+Take a number: 56789. Rotate left, you get 67895.
+
+Keep the first digit in place and rotate left the other digits: 68957.
+
+Keep the first two digits in place and rotate the other ones: 68579.
+
+Keep the first three digits and rotate left the rest: 68597. Now it is over since keeping the first four it remains only one digit which rotated is itself.
+
+You have the following sequence of numbers:
+
+56789 -> 67895 -> 68957 -> 68579 -> 68597
+
+and you must return the greatest: 68957.
+
+Task
+Write function max_rot(n) which given a positive integer n returns the maximum number you got doing rotations similar to the above example.
+
+So max_rot (or maxRot or ... depending on the language) is such as:
+
+max_rot(56789) should return 68957
+
+max_rot(38458215) should return 85821534
+
+## Process/Learned:
+
+1. I started this problem by first loggin in the given number.
+
+2. Then i changed the number into a string value and into an array using the toSring and split method.
+
+3. Then i created some variables for an empty array, another one that holds the number in the string array format, another one that will hold the number to be shifted which equals 0 initially and lastly a variable to hold the max number.
+
+4. Then i created a for loop that will move through the array of string numbers. While this for loop is happening i held the first number into one of my variables called pushing. I did this by using the splice method on the array of string numbers. The splice method removes the one at the index value of i which starts at 0. I made sure i get the value of the array being given by placing square a bracket with the 0 index inside. This grabs the value of the array that is returned from the splice method.
+
+5. Then I inserted that number using the same splice method and made sure to insert it at the last index of the string array.
+
+6. Then I pushed that whole array of string numbers into the empty array. But not before converting it back into a number with the join and Number method.
+
+7. Then lastly after the for loop repeats and finishes the loop, I get all the numbers and placed them into the Math.max method using the spread syntax, and also place the original number with it. This makes sure i get all my edge cases and get me the highest number which is then returned and ends the function.
+
+8. I learned from this problem that having good architecture is crucial in a function like this one. If i had placed the max method before the for loop, i would get an error of negative infinity. This makes sense because the for loop has not finished pushing all the numbers into the empty array, therefor there are not any numbers to see what is greater. I also learned how to use the splice method a bit more wisely by using its insert and remove functions and knowing which positions i want to pull and place. Overall, great problem to solve.     
+
+## 7 kyu Password Hashes:
+
+When you sign up for an account somewhere, some websites do not actually store your password in their databases. Instead, they will transform your password into something else using a cryptographic hashing algorithm.
+
+After the password is transformed, it is then called a password hash. Whenever you try to login, the website will transform the password you tried using the same hashing algorithm and simply see if the password hashes are the same.
+
+Create the function that converts a given string into an md5 hash. The return value should be encoded in hexadecimal.
+
+You will need to use the NodeJS Crypto Module or libcrypto for the C and NASM versions.
+
+###Code Examples
+
+passHash('password')
+  //--> '5f4dcc3b5aa765d61d8327deb882cf99'
+
+passHash('abc123')
+  //--> 'e99a18c428cb38d5f260853678922e03'
+If you want to externally test a string, look at this website.
+
+If you are completely lost, I recommend you check out my previous Introduction to NodeJS.
+
+As a side note, md5 can be exploited, so never use it for anything secure. The reason I used it in this kata is simply because it is a very common hashing algorithm and many people will recognize the name.
+
+## Process/Learned:
+
+1. I solved this problem by doing some extensive research into node modules. Reading about crypto and finding the methods to use to get the result I am looking for.
+
+2. So to solve this problem i focused on finding out how to apply the crypto module to my code so i can use the methods. So i used the require method so i can import the module. I made sure this was stored in a variable that is accessible globally so that both functions can have access to the module.  
+
+3. Then i used the create hash method and set it to md5 so that the string can be hashed.
+
+4. Then i used the update method so i can set the string as the value that will be hashed.
+
+5. Finally i used the digest method to have the string be encoded in hexadecimal .
+
+## 7 kyu Node.js Intro:
+
+JavaScript (and CoffeeScript by extension) is a language that is heavily dependent on a run-time environment. While most people learn JS in a browser environment, there are other environemnts that run outside of a browser. Codewars runs your code in a *Node.js* environment.
+
+This kata is an attempt to introduce the NodeJS environment.
+
+Environment Differences
+The runtime environment gives your code the ability to interact with software outside of the language itself. For example, a browser environment has several built-ins that let you interact with a webpage. You can use functions like getElementById or XMLHttpRequest.
+
+Node.js, however, cannot use those browser-specific built-ins (go ahead, try). Node.js is an environment for javascript that is meant to run on your computer (server-side). So while you lose the ability to work with browser built-ins, you gain access to NodeJS-specific code.
+
+Kata
+We are going to replicate the kata Base64 Encoding, but instead of creating our own encoding / decoding functions, we will use NodeJS' Buffer module to do it for us.
+
+Create the function String.prototype.toBase64 that encodes a string in Base64. Also create the function String.prototype.fromBase64 that decodes a Base64 string into utf8.
+
+Examples
+// should return 'dGhpcyBpcyBhIHN0cmluZyEh'
+'this is a string!!'.toBase64();
+
+// should return 'this is a string!!'
+'dGhpcyBpcyBhIHN0cmluZyEh'.fromBase64();
+Tips
+To use a NodeJS module, you need to require it into your code. For example, if I wanted to use the util module, I could write
+
+//require the 'util' module into your code
+var util = require('util')
+console.log(util.isRegExp(/hi/))
+The NodeJS built-in function require knows exactly how to find the module, so no extra work is needed. After you have required a module into your code, you can use any of the methods / properties for it.
+
+The NodeJS documentation is helpful, so I suggest you look at that. If you plan on working with NodeJS at all in the future, it is beneficial to know what features it has built-in.
+
+## Process/Learned:
+
+1. This function was another dive into Node and it's modules. I looked up the buffer module and how to use it by writing the name as a string in the require method.
+
+2. So for this function, i had to turn a string from utf8 to base64. Then from base64 to utf8. The first thing that struct me about doing this kind of function is that i could not find out what to console.log from a first glance. I had to learn of the (this) method for me to know how to pinpoint the string in the string.prototype.toBase64 object and same for the string.prototype.fromBase64 object. The this method allowed me to target the string and use if in the methods.   
+
+3. So for the first function expression, i logged the string in the console using the this method. Then i stored string after it had been changed by the American Standard Code for Information Interchange into a numeric code.
+
+4. Then i set the variable to the toString method and set the type of string to base64. This encodes the string in the base64 format.
+
+5. For the second function, I followed a similar pattern where i logged the string in the console.
+
+6. Then i changed the given string to a base64 format using the Buffer.from method.
+
+7. Then i changed to to a string with the toString method in the utf8 format. This changes both string the expected output and ends the function.
+
+## 6 kyu Roman Numerals Decoder:
+
+Create a function that takes a Roman numeral as its argument and returns its value as a numeric decimal integer. You don't need to validate the form of the Roman numeral.
+
+Modern Roman numerals are written by expressing each decimal digit of the number to be encoded separately, starting with the leftmost digit and skipping any 0s. So 1990 is rendered "MCMXC" (1000 = M, 900 = CM, 90 = XC) and 2008 is rendered "MMVIII" (2000 = MM, 8 = VIII). The Roman numeral for 1666, "MDCLXVI", uses each letter in descending order.
+
+Example:
+
+solution('XXI'); // should return 21
+Help:
+
+Symbol    Value
+I          1
+V          5
+X          10
+L          50
+C          100
+D          500
+M          1,000
+
+## Process/Learned:
+
+1. I solved this problem by first loging the given string in the console. Then i created an object that holds the roman numeral characters as the keys and the value of those characters as the value.
+
+2. Then i created a for loop that went through the string to it's full length. The first conditional is if the letter preceding the next letter has a lower value than the next letter, then subtract the values with the bigger value being subtracted by the lower value and added to the total.
+
+3. Else, the numbers will be added to the total normally from left to right and then returned.     
