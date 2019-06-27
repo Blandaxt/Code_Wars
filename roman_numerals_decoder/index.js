@@ -35,9 +35,9 @@ function solution(roman){
 
     }
 
-    let total = 0;
+    let total = 0, numerals
 
-    for( let numerals = 0; numerals < roman.length; numerals++){
+    for( numerals = 0; numerals < roman.length; numerals++){
 
       console.log(total)
 
@@ -47,7 +47,7 @@ function solution(roman){
 
         console.log(roman[numerals + 1], "-", roman[numerals], translateToNum[roman[numerals + 1]], "-", translateToNum[roman[numerals]], "total: ", total)
 
-        return total
+        numerals++
 
       }
              console.log("adding: ", total, "+", translateToNum[roman[numerals]],  translateToNum[roman[numerals + 1]] )

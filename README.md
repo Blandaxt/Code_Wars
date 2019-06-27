@@ -1888,8 +1888,49 @@ M          1,000
 
 ## Process/Learned:
 
-1. I solved this problem by first loging the given string in the console. Then i created an object that holds the roman numeral characters as the keys and the value of those characters as the value.
+1. I solved this problem by first logging the given string in the console. Then i created an object that holds the roman numeral characters as the keys and the value of those characters as the value.
 
 2. Then i created a for loop that went through the string to it's full length. The first conditional is if the letter preceding the next letter has a lower value than the next letter, then subtract the values with the bigger value being subtracted by the lower value and added to the total.
 
-3. Else, the numbers will be added to the total normally from left to right and then returned.     
+3. Else, the numbers will be added to the total normally from left to right and then returned.  
+
+## 6 kyu Roman Numerals Encoder
+
+Create a function taking a positive integer as its parameter and returning a string containing the Roman Numeral representation of that integer.
+
+Modern Roman numerals are written by expressing each digit separately starting with the left most digit and skipping any digit with a value of zero. In Roman numerals 1990 is rendered: 1000=M, 900=CM, 90=XC; resulting in MCMXC. 2008 is written as 2000=MM, 8=VIII; or MMVIII. 1666 uses each Roman symbol in descending order: MDCLXVI.
+
+Example:
+
+solution(1000); // should return 'M'
+Help:
+
+Symbol    Value
+I          1
+V          5
+X          10
+L          50
+C          100
+D          500
+M          1,000
+Remember that there can't be more than 3 identical symbols in a row.
+
+More about roman numerals - http://en.wikipedia.org/wiki/Roman_numerals
+
+## Proccess/Learned:
+
+1. I learned to solve this problem by imagining how i could get each value out of each character and character combination.
+
+2. So i first created an array of objects where each object contains a roman numeral/numeral combination as a key and a number representing the value of that roman numeral. This array is in order from 1000 to 1.
+
+3. Then i created two other variables where one of the variable is a 0 and the other is an empty string.
+
+4. I then looped through the array of objects and created a for in loop in the for loop to deal with each object in the array. I grabbed the keys in the for loop.
+
+5. I then used a while to set up a condition that would repeat a statement until the condition is false. So for the condition i made it so that as long as the value variable plus the value of on of the objects is less than of the given number.
+
+6. When those conditions meet, the while loop will iterate. The statement inside the while loop will run, where the value variable will be added to the value of the the roman numeral that is less then the current number.
+
+7. I also add the roman numeral key to the romanStr variable which concatenates all the characters into one string. This keeps repeating until the value variable added to the roman numeral value is the same amount as the given number.
+
+8. Then lastly, i return the return the romanStr which represent the number's equivalent in Roman numerals.      
