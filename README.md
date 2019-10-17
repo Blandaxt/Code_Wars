@@ -1894,7 +1894,7 @@ M          1,000
 
 3. Else, the numbers will be added to the total normally from left to right and then returned.  
 
-## 6 kyu Roman Numerals Encoder
+## 6 kyu Roman Numerals Encoder:
 
 Create a function taking a positive integer as its parameter and returning a string containing the Roman Numeral representation of that integer.
 
@@ -1933,4 +1933,16 @@ More about roman numerals - http://en.wikipedia.org/wiki/Roman_numerals
 
 7. I also add the roman numeral key to the romanStr variable which concatenates all the characters into one string. This keeps repeating until the value variable added to the roman numeral value is the same amount as the given number.
 
-8. Then lastly, i return the return the romanStr which represent the number's equivalent in Roman numerals.      
+8. Then lastly, i return the return the romanStr which represent the number's equivalent in Roman numerals.    
+
+## 8 kyu My head is at the wrong end!:
+
+You're at the zoo... all the meerkats look weird. Something has gone terribly wrong - someone has gone and switched their heads and tails around!
+
+Save the animals by switching them back. You will be given an array which will have three values (tail, body, head). It is your job to re-arrange the array so that the animal is the right way round (head, body, tail).
+
+Same goes for all the other arrays/lists that you will get in the tests: you have to change the element positions with the same exact logics - simples!
+
+## Process/Learned:
+
+1. I was surprised to learn that each array is not unique after doing some research. After sensing a pattern, I noticed that every array presented is a reversed form of the corrected version. And to solve it, i simply needed to reversed it again.  
