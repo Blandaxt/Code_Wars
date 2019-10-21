@@ -1946,3 +1946,21 @@ Same goes for all the other arrays/lists that you will get in the tests: you hav
 ## Process/Learned:
 
 1. I was surprised to learn that each array is not unique after doing some research. After sensing a pattern, I noticed that every array presented is a reversed form of the corrected version. And to solve it, i simply needed to reversed it again.  
+
+## 8 kyu 101 Dalmatians - squash the bugs, not the dogs!:
+
+Your friend has been out shopping for puppies (what a time to be alive!)... He arrives back with multiple dogs, and you simply do not know how to respond!
+
+By repairing the function provided, you will find out exactly how you should respond, depending on the number of dogs he has.
+
+The number of dogs will always be a number and there will always be at least 1 dog.
+
+## Process/Learned:
+
+1. The objective of this challenge was to fix the mistakes in this given function.
+
+2. So to start, i went over the way the function was written and noticed several obvious mistakes such as the function name, the fucntion brackets, and how the ternary if else operator is written.
+
+3. Next i noticed some hidden mistakes such as the given string that is supposed to be returned and the amount of dogs that should return the 101 Dalmatians.
+
+  - Overall, it was a fun challenge. 
