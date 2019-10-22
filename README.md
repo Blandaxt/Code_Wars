@@ -1963,4 +1963,29 @@ The number of dogs will always be a number and there will always be at least 1 d
 
 3. Next i noticed some hidden mistakes such as the given string that is supposed to be returned and the amount of dogs that should return the 101 Dalmatians.
 
-  - Overall, it was a fun challenge. 
+  - Overall, it was a fun challenge.
+
+## 8 kyu Grasshopper - Check for factor:
+
+Check for Factor
+This function should test if the factor is a factor of base.
+
+Return true if it is a factor or false if it is not.
+
+Information
+Factors are numbers you can multiply together to get another number.
+
+2 and 3 are factors of 6 because:
+
+2 * 3 = 6
+You can find a factor by dividing numbers. If the remainder is 0 then the number is a factor.
+In Javascript and C# you can use % to check for a remainder
+For example 2 is not a factor of 7 because:
+
+7 % 2 = 1
+
+## Process/Learned:
+
+1. Checking for the factor was easy where i looked for the remainder of diving the base number by the factor number and seeing if that number is equal to 0.
+
+2. If true, than that number is a factor of the base, else it is false. And i return that result. 
