@@ -1988,4 +1988,25 @@ For example 2 is not a factor of 7 because:
 
 1. Checking for the factor was easy where i looked for the remainder of diving the base number by the factor number and seeing if that number is equal to 0.
 
-2. If true, than that number is a factor of the base, else it is false. And i return that result. 
+2. If true, than that number is a factor of the base, else it is false. And i return that result.
+
+## 8 kyu A Needle in the Haystack:
+
+Can you find the needle in the haystack?
+
+Write a function findNeedle() that takes an array full of junk but containing one "needle"
+
+After your function finds the needle it should return a message (as a string) that says:
+
+"found the needle at position " plus the index it found the needle, so:
+
+findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk'])
+should return "found the needle at position 5"
+
+## Process/Learned:
+
+1. So the objective of this challenge is to look through an array and look for a string "needle".
+
+2. I was able to find it by using the method indexOf on the string needle on the array that contains it.
+
+3. Then I used the positioning of the index and returned it in the string "found the needle at position 5" using template literal.  
