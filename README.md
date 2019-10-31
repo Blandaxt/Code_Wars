@@ -2010,3 +2010,29 @@ should return "found the needle at position 5"
 2. I was able to find it by using the method indexOf on the string needle on the array that contains it.
 
 3. Then I used the positioning of the index and returned it in the string "found the needle at position 5" using template literal.  
+
+## 7 kyu Love vs friendship:
+
+If　a = 1, b = 2, c = 3 ... z = 26
+
+Then l + o + v + e = 54
+
+and f + r + i + e + n + d + s + h + i + p = 108
+
+So friendship is twice stronger than love :-)
+
+The input will always be in lowercase and never be empty.
+
+## Process/Learned:
+
+1. This function asked me to be able to assign a number to each alphabetical symbol and use that information to be able to sum up a word.
+
+2. I started this function on the assumption i would have to create the object manualy and then loop through the object to find the value for each aphabetical symbol.
+
+3. But an idea came to me that i should create this object at run with its properties and values.
+
+4. So after some research, I found that the to string method can convert numbers to an alphabetical symbol.
+
+5. so i use this method to map the whole alphabet from a to z with the values of 1 to 26.
+
+6. Then I took the string I am given and turned it into an array of individual letters using the split method. Converted that array to numbers from the object I created using the bracket notation and the map method to loop through that array of letters. And summed up those numbers using the reduced method which i then returned.  
