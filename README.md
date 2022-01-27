@@ -2036,3 +2036,21 @@ The input will always be in lowercase and never be empty.
 5. so i use this method to map the whole alphabet from a to z with the values of 1 to 26.
 
 6. Then I took the string I am given and turned it into an array of individual letters using the split method. Converted that array to numbers from the object I created using the bracket notation and the map method to loop through that array of letters. And summed up those numbers using the reduced method which i then returned.  
+
+## 7 kyu Shift Left:
+
+You are given two strings. In a single move, you can choose any of them, and delete the first (i.e. leftmost) character.
+
+For Example:
+
+By applying a move to the string "where", the result is the string "here".
+By applying a move to the string "a", the result is an empty string "".
+Implement a function that calculates the minimum number of moves that should be performed to make the given strings equal.
+
+Notes
+Both strings consist of lowercase latin letters.
+If the string is already empty, you cannot perform any more delete operations.
+
+## Process/Learned:
+
+1. 
