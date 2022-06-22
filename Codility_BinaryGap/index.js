@@ -17,6 +17,8 @@ Write an efficient algorithm for the following assumptions:
 
 N is an integer within the range [1..2,147,483,647].
 
+does this work?
+
 */
 
 function solution(N) {
@@ -72,5 +74,6 @@ function solution(N) {
     }else{
 
         return binaryGap
+
     }
 }
